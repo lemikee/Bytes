@@ -1,0 +1,2 @@
+class BusinessCuisine < ApplicationRecord
+end
