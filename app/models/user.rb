@@ -3,7 +3,6 @@
 # Table name: users
 #
 #  id              :bigint           not null, primary key
-#  birthday        :date             not null
 #  email           :string           not null
 #  first_name      :string           not null
 #  last_name       :string           not null
@@ -19,7 +18,7 @@
 #  index_users_on_session_token  (session_token) UNIQUE
 #
 class User < ApplicationRecord
-  validates_presence_of :first_name, :last_name, :email, :birthday, :password_digest, :session_token, :zip_code
+  validates_presence_of :first_name, :last_name, :email, :password_digest, :session_token, :zip_code
   validates_uniqueness_of :email, :session_token
 
   has_many :reviews,
