@@ -7,3 +7,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+#users
+
+user1 = User.create!({
+    first_name:"Mike",
+    last_name:"Le",
+    email:"mike@le.com",
+    zip_code: 94720
+})
+
+user2 = User.create!({
+    first_name:"Hire",
+    last_name:"Me",
+    email:"hire@me.com",
+    zip_code: 94720
+})
+
