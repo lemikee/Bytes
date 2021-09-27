@@ -19,8 +19,8 @@
 class Review < ApplicationRecord
   validates_presence_of :content, :rating
   validates :user_id, presence: true, uniqueness: { scope: :business_id }
-  validates :content_too_short
-  validates :content_too_long
+  validate :content_too_short
+  validate :content_too_long
 
   def content_too_long
     errors[:content] << 'Whoops! Try to keep reviews under 5000 characters.' if content && content.length > 5000
