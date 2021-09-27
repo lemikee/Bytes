@@ -32,7 +32,7 @@ class Business < ApplicationRecord
   has_many :reviews,
     foreign_key: :business_id,
     class_name: :Review
-
+  
   has_many :cuisines,
     foreign_key: :business_id,
     class_name: :Review
