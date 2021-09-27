@@ -27,12 +27,12 @@ class Business < ApplicationRecord
 
   belongs_to :city
 
-  belong_to :cuisine
+  belongs_to :cuisine
 
   has_many :reviews,
     foreign_key: :business_id,
     class_name: :Review
-  
+
   has_many :cuisines,
     foreign_key: :business_id,
     class_name: :Review
