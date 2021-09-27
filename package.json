@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch --mode=development",
+    "build": "webpack --watch --mode=development",
     "postinstall": "webpack"
   },
   "repository": {
@@ -40,7 +40,7 @@
     "webpack-cli": "^4.8.0"
   },
   "engines": {
-    "node": "12.5.0",
-    "npm": "6.9.0"
+    "node": "10.13.0",
+    "npm": "7.23.0"
   }
 }

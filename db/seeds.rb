@@ -17,4 +17,3 @@ user1 = User.create!({
   email:"hire@me.com",
   zip_code: 94720
 })
-
