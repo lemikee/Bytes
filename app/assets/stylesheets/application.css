@@ -349,6 +349,7 @@ h3 {
 }
 button {
   width: 200px;
+  cursor:pointer;
 }
 
 .signup-login-btn {
@@ -366,6 +367,7 @@ button {
   padding: 5px;
   border: none;
   height: 43px;
+  cursor: pointer;
 }
 .session-form {
   display: flex;
@@ -373,6 +375,8 @@ button {
   align-items: right;
   width: 100%;
 }
+
+button .
 
 .name-container {
   display: flex;

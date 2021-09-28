@@ -9,6 +9,8 @@
 
 #users
 
+User.destroy_all
+
 user1 = User.create!({
   email:"hire@me.com",
   password: "password",

@@ -23,7 +23,7 @@ class LoginForm extends React.Component {
     e.preventDefault();
     this.props.processForm(this.state);
   }
-
+  
   handleDemo() {
     this.props.processForm({ email: "hire@me.com", password: "password" });
   }
@@ -119,7 +119,7 @@ class LoginForm extends React.Component {
                   <a href="https://angel.co/u/mike-le-5">AngelList</a>
                 </div>
 
-              
+
 
               </div>
               <div className="col-two col">
