@@ -9,7 +9,7 @@ class LoginForm extends React.Component {
       password: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.demoSubmit = this.demoSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this);
   }
 
   update(field) {
@@ -21,8 +21,12 @@ class LoginForm extends React.Component {
     this.props.processForm(this.state);
   }
 
-  demoSubmit() {
+  handleDemo() {
     this.props.processForm({ email: "hire@me.com", password: "password" });
+  }
+
+  componentWillUnmount() {
+    this.props.removeErrors();
   }
 
   render() {
@@ -80,7 +84,7 @@ class LoginForm extends React.Component {
                 <div className="middle-or">
                   <h3 id="line">OR</h3>
                 </div>
-                <button className="signup-login-btn" onClick={this.demoSubmit}>
+                <button className="signup-login-btn" onClick={this.handleDemo}>
                   Demo Log In
                 </button>
               </form>
