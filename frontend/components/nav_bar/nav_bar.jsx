@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -10,25 +10,34 @@ class NavBar extends React.Component {
     if (!this.props.currentUser) {
       navRight = (
         <ul>
-          <li><Link to='/login'>Login</Link></li>
-          <li><Link to='/signup' className='signup-link'>Sign Up</Link></li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/signup" className="clear-button">
+              Sign Up
+            </Link>
+          </li>
         </ul>
       );
     } else {
       navRight = (
         <ul>
           <li>
-            <button onClick={() => this.props.logout()} className='logout-btn'>Log Out</button>
+            <button
+              onClick={() => this.props.logout()}
+              className="clear-button"
+            >
+              Log Out
+            </button>
           </li>
         </ul>
       );
     }
 
     return (
-      <div className='nav-bar'>
-        <ul>
+      <div className="nav-bar">
 
-        </ul>
         {navRight}
       </div>
     );

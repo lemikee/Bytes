@@ -10,10 +10,9 @@
 #users
 
 user1 = User.create!({
-  username: "demo",
+  email:"hire@me.com",
   password: "password",
   first_name:"Hire",
   last_name:"me",
-  email:"hire@me.com",
   zip_code: 94720
 })

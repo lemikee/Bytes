@@ -8,7 +8,6 @@
 #  last_name       :string           not null
 #  password_digest :string           not null
 #  session_token   :string           not null
-#  username        :string           not null
 #  zip_code        :integer          not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
@@ -17,11 +16,10 @@
 #
 #  index_users_on_email          (email) UNIQUE
 #  index_users_on_session_token  (session_token) UNIQUE
-#  index_users_on_username       (username) UNIQUE
 #
 class User < ApplicationRecord
-  validates_presence_of :username, :first_name, :last_name, :email, :password_digest, :session_token, :zip_code
-  validates_uniqueness_of :username, :email, :session_token
+  validates_presence_of :first_name, :last_name, :email, :password_digest, :session_token, :zip_code
+  validates_uniqueness_of :email, :session_token
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   attr_reader :password
@@ -32,8 +30,8 @@ class User < ApplicationRecord
            foreign_key: :user_id,
            class_name: :Review
 
-  def self.find_by_credentials(username, password)
-    user = User.find_by(username: username)
+  def self.find_by_credentials(email, password)
+    user = User.find_by(email: email)
     user if user && user.is_password?(password)
   end
 
