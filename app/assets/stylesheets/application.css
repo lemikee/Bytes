@@ -63,15 +63,8 @@ p + i {
 }
 
 .footer {
-  /* display: table; */
   background-color: #f4f4f4;
-  /* height: 100px; */
-  /* overflow: hidden; */
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* padding-bottom: -100px; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .footer-links {
