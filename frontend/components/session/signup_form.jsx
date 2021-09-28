@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ButtonMailto from "../email/email";
 
 class SignupForm extends React.Component {
   constructor(props) {
