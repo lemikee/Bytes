@@ -17,7 +17,7 @@
  */
 
 * {
-  background: white;
+  /* background: white; */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -193,6 +193,15 @@ h3#line:after {
 
 h3#line:after {
   margin: 0 0 0 20px;
+}
+
+/* .email-me {
+} */
+
+#email-container  a {
+  color: #757280 !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4;
 }
 
 .nav-bar {

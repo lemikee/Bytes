@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ButtonMailto from "../email/email";
+// import Resume from "../../../app/assets/documents/Resume.pdf";
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -105,7 +107,17 @@ class LoginForm extends React.Component {
               <div className="col-one col">
                 <p className="col-title">About</p>
                 <br />
-                <Link to="#" className="col-content">
+
+                <div id="email-container">
+                  <a href="https://www.linkedin.com/in/mike-le/">LinkedIn</a>
+                </div>
+                <div id="email-container">
+                  <a href="https://github.com/lemikee">Github</a>
+                </div>
+                <div id="email-container">
+                  <a href="https://angel.co/u/mike-le-5">AngelList</a>
+                </div>
+                {/* <Link to="#" className="col-content">
                   About Yelp
                 </Link>
                 <Link to="#" className="col-content">
@@ -131,15 +143,24 @@ class LoginForm extends React.Component {
                 </Link>
                 <Link to="#" className="col-content">
                   Ad Choices
-                </Link>
+                </Link> */}
               </div>
               <div className="col-two col">
                 <p className="col-title">Discover</p>
                 <br />
-                <Link to="#" className="col-content">
-                  Yelp Project Cost Guides
-                </Link>
-                <Link to="#" className="col-content">
+
+                {/* <a href="../../../app/assets/documents/resume.pdf" download>
+                  Resume
+                </a> */}
+
+                <div id="email-container">
+                  <ButtonMailto
+                    className="email-me"
+                    label="Email"
+                    mailto="mailto:lemichael@berkeley.edu"
+                  />
+                </div>
+                {/* <Link to="#" className="col-content">
                   Collections
                 </Link>
                 <Link to="#" className="col-content">
@@ -162,12 +183,17 @@ class LoginForm extends React.Component {
                 </Link>
                 <Link to="#" className="col-content">
                   Developers
-                </Link>
+                </Link> */}
               </div>
               <div className="col-three col">
-                <p className="col-title">Yelp for Business</p>
+                <p className="col-title">Other Projects</p>
                 <br />
-                <Link to="#" className="col-content">
+                <div id="email-container">
+                  <a href="https://lemikee.github.io/pokemon-Battle/">
+                    Pokemon Battle!
+                  </a>
+                </div>
+                {/* <Link to="#" className="col-content">
                   Claim your Business Page
                 </Link>
                 <Link to="#" className="col-content">
@@ -187,7 +213,7 @@ class LoginForm extends React.Component {
                 </Link>
                 <Link to="#" className="col-content">
                   Yelp Blog for Business
-                </Link>
+                </Link> */}
               </div>
               <div className="col-four col">
                 <p className="col-title">Languages</p>
