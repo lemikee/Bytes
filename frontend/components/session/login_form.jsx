@@ -23,7 +23,7 @@ class LoginForm extends React.Component {
     e.preventDefault();
     this.props.processForm(this.state);
   }
-  
+
   handleDemo() {
     this.props.processForm({ email: "hire@me.com", password: "password" });
   }
@@ -120,13 +120,10 @@ class LoginForm extends React.Component {
                 </div>
 
 
-
               </div>
               <div className="col-two col">
                 <p className="col-title">Discover</p>
                 <br />
-
-
 
                 <div id="email-container">
                   <ButtonMailto

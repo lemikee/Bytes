@@ -37,7 +37,19 @@ class NavBar extends React.Component {
 
     return (
       <div className="nav-bar">
-
+        <div className="align-left">
+          <ul>
+            <li>
+              <Link to="#">Write a Review</Link>
+            </li>
+            <li>
+              <Link to="#">Events</Link>
+            </li>
+            <li>
+              <Link to="#">Talk</Link>
+            </li>
+          </ul>
+        </div>
         {navRight}
       </div>
     );
