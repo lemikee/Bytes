@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 import { connect } from "react-redux";
-import Review from './review';
-import { fetchUser } from '../../actions/user_actions';
-
+import Review from "./review";
+import { fetchUser } from "../../actions/user_actions";
 
 const mapStateToProps = (state, ownProps) => {
-    return{
+  return {
     review: ownProps.review,
-    user: state.entities.users[ownProps.review.userId]
-}}
+    user: state.entities.users[ownProps.review.userId],
+  };
+};
 
-const mapDispatchToProps = dispatch => ({
-    fetchUser: (userId)=> dispatch(fetchUser(userId))
-})
-export default connect(mapStateToProps, mapDispatchToProps)(Review)
+const mapDispatchToProps = (dispatch) => ({
+  fetchUser: (userId) => dispatch(fetchUser(userId)),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(Review);
