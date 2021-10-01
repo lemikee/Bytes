@@ -9,7 +9,7 @@ class Api::ReviewsController < ApplicationController
     if @review
       render :show
     else
-      render json: ["Review doesn't exist"]
+      render json: ["This review doesn't exist"]
     end
   end
 
@@ -18,14 +18,32 @@ class Api::ReviewsController < ApplicationController
     if @review.save
       render :show
     else
-      render json: @review.errors.full_messages, status: 401
+      render json: @review.errors.full_messages, status: 422
     end
   end
 
-  def update; end
+  def update
+    @review = Review.find_by(user_id: params[:review][:user_id], business_id: params[:review][:business_id])
+    if @review.update_attributes(review_params)
+      render :show
+    else
+      render json: @review.errors.full_messages, status: 422
+    end
+  end
+
+  def destroy
+    @review = Review.find(params[:id])
+    if @review.destroy
+      render :show
+    # render "api/business/#{@review.business_id}"
+    else
+      render json: @review.errors.full_messages, status: 422
+    end
+  end
 
   private
+
   def review_params
-    params.require(:review).permit(:rating, :comment, :user_id, :business_id)
+    params.require(:review).permit(:rating, :body, :user_id, :business_id)
   end
 end

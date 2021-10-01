@@ -27,8 +27,10 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
 
   has_many :reviews,
-           foreign_key: :user_id,
-           class_name: :Review
+    foreign_key: :user_id,
+    class_name: :Review
+
+  has_one_attached :photo
 
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)

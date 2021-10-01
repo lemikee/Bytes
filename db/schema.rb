@@ -36,51 +36,43 @@ ActiveRecord::Schema.define(version: 2021_09_30_050050) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "business_cuisines", force: :cascade do |t|
+  create_table "business_categories", force: :cascade do |t|
     t.integer "business_id", null: false
-    t.integer "cuisine_id", null: false
+    t.integer "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["business_id"], name: "index_business_cuisines_on_business_id"
-    t.index ["cuisine_id"], name: "index_business_cuisines_on_cuisine_id"
+    t.index ["business_id", "category_id"], name: "index_business_categories_on_business_id_and_category_id", unique: true
   end
 
   create_table "businesses", force: :cascade do |t|
     t.string "business_name", null: false
-    t.integer "cuisine_id", null: false
     t.string "address", null: false
-    t.integer "city_id", null: false
-    t.integer "zip_code", null: false
+    t.string "city", null: false
     t.string "state", null: false
-    t.string "hours", null: false
-    t.string "description", null: false
-    t.float "long", null: false
-    t.float "lat", null: false
+    t.string "zip_code", null: false
+    t.float "latitude"
+    t.float "longitude"
+    t.string "phone"
+    t.string "website"
+    t.string "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["address"], name: "index_businesses_on_address", unique: true
     t.index ["business_name"], name: "index_businesses_on_business_name"
   end
 
-  create_table "cities", force: :cascade do |t|
-    t.string "city", null: false
+  create_table "categories", force: :cascade do |t|
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["city"], name: "index_cities_on_city"
-  end
-
-  create_table "cuisines", force: :cascade do |t|
-    t.string "cuisine", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["cuisine"], name: "index_cuisines_on_cuisine", unique: true
+    t.index ["name"], name: "index_categories_on_name", unique: true
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.string "content", null: false
+    t.string "body", default: "", null: false
     t.integer "rating", null: false
-    t.integer "user_id", null: false
     t.integer "business_id", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["business_id"], name: "index_reviews_on_business_id"

@@ -1,2 +1,2 @@
-json.extract! business, :id, :business_name, :cuisine_id, :address, :city_id, :zip_code, :state, :hours, :description,
-              :long, :lat
+json.extract! business, :id, :business_name, :address, :city, :state, :zip_code, :latitude, :longitude, :phone, :website, :price, :average_rating
+# json.photo url_for(business.photo)

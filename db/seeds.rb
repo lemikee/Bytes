@@ -10,23 +10,23 @@
 #users
 
 User.destroy_all
-City.destroy_all
-Cuisine.destroy_all
-Review.destroy_all
 Business.destroy_all
+Review.destroy_all
+Category.destroy_all
+BusinessCategory.destroy_all
 
-business1 = Business.create!({
-  business_name: 'App Academy',
-  cuisine_id: 4,
-  address: '825 Battery St',
-  city_id: 6,
-  zip_code: 94111,
-  state: 'CA',
-  hours: '8AM-10PM',
-  description: "Since App Academy started in 2012, we've consistently been regarded as one of the best coding bootcamps in the world by students and employers.",
-  long: 10,
-  lat: 10
-})
+# business1 = Business.create!({
+#   business_name: 'App Academy',
+#   cuisine_id: 4,
+#   address: '825 Battery St',
+#   city_id: 6,
+#   zip_code: 94111,
+#   state: 'CA',
+#   hours: '8AM-10PM',
+#   description: "Since App Academy started in 2012, we've consistently been regarded as one of the best coding bootcamps in the world by students and employers.",
+#   long: 10,
+#   lat: 10
+# })
 
 user1 = User.create!({
   email:"hire@me.com",
@@ -36,17 +36,20 @@ user1 = User.create!({
   zip_code: 94720
 })
 
-city1 = City.create!({
-  city: "San Francisco"
-})
+cat1 = Category.create(name: "Breakfast")
+cat2 = Category.create(name: "Lunch")
+cat3 = Category.create(name: "Dinner")
+cat4 = Category.create(name: "Seafood")
+cat5 = Category.create(name: "Asian")
+cat6 = Category.create(name: "Asian Fusion")
+cat7 = Category.create(name: "Mexican")
+cat8 = Category.create(name: "Italian")
+cat9 = Category.create(name: "American")
 
-cuisine1 = Cuisine.create!({
-  cuisine: "Sadness"
-})
+business1 = Business.create(business_name: "Fog Harbor Fish House", address: "Pier 39 Ste A-202", city: "San Francisco", state: "CA", zip_code: "94133", latitude: 37.80964, longitude: -122.41025, phone: "(415) 421-2442", website: "fogharbor.com", price: '$$')
+business2 = Business.create(business_name: "Marufuku Ramen", address: "1581 Webster St", city: "San Francisco", state: "CA", zip_code: "94115", latitude: 37.78537, longitude: -122.43146, phone: "(415) 872-9786", website: "marufukuramen.com", price: '$$')
+business3 = Business.create(business_name: "The House", address: "1230 Grant Ave", city: "San Francisco", state: "CA", zip_code: "94133", latitude: 37.797952, longitude: -122.407148, phone: "(415) 986-8612", website: "thehse.com", price: '$$$')
 
-review1 = Review.create!({
-  content: 'App Academy',
-  rating: 5,
-  user_id: 1,
-  business_id: 1
-})
+Review.create(business_id: business1.id, user_id: user1.id, rating: 5, body: "Had the best dinner here!! It is right off the pier with great views of the city, the bay, and most importantly, the Golden Gate Bridge! Make sure to get reservations and ask for a seat by the window to get a great sunset view at dinner.")
+
+BusinessCategory.create(business_id: business1.id, category_id: cat3.id)

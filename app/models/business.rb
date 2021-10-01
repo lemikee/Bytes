@@ -5,16 +5,16 @@
 #  id            :bigint           not null, primary key
 #  address       :string           not null
 #  business_name :string           not null
-#  description   :string           not null
-#  hours         :string           not null
-#  lat           :float            not null
-#  long          :float            not null
+#  city          :string           not null
+#  latitude      :float
+#  longitude     :float
+#  phone         :string
+#  price         :string
 #  state         :string           not null
-#  zip_code      :integer          not null
+#  website       :string
+#  zip_code      :string           not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
-#  city_id       :integer          not null
-#  cuisine_id    :integer          not null
 #
 # Indexes
 #
@@ -22,22 +22,24 @@
 #  index_businesses_on_business_name  (business_name)
 #
 class Business < ApplicationRecord
-  validates_presence_of :address, :business_name, :description, :hours, :lat, :long, :state, :zip_code
+  validates_presence_of :business_name, :address, :city, :state, :zip_code
   validates_uniqueness_of :address
 
-  belongs_to :city
-
-  belongs_to :cuisine
+  def average_rating
+    reviews.average(:rating)
+  end
 
   has_many :reviews,
     foreign_key: :business_id,
     class_name: :Review
 
-  has_many :cuisines,
+  has_many :business_categories,
     foreign_key: :business_id,
-    class_name: :Review
+    class_name: :BusinessCategory
+  has_many :categories,
+    through: :business_categories,
+    source: :category
 
-  has_many :business_cuisines,
-    foreign_key: :cuisine_id,
-    class_name: :BusinessCuisine
+  has_one_attached :photo
+  has_many_attached :pics
 end

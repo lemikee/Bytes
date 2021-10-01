@@ -5,16 +5,16 @@
 #  id            :bigint           not null, primary key
 #  address       :string           not null
 #  business_name :string           not null
-#  description   :string           not null
-#  hours         :string           not null
-#  lat           :float            not null
-#  long          :float            not null
+#  city          :string           not null
+#  latitude      :float
+#  longitude     :float
+#  phone         :string
+#  price         :string
 #  state         :string           not null
-#  zip_code      :integer          not null
+#  website       :string
+#  zip_code      :string           not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
-#  city_id       :integer          not null
-#  cuisine_id    :integer          not null
 #
 # Indexes
 #

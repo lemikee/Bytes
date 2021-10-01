@@ -3,7 +3,7 @@
 # Table name: reviews
 #
 #  id          :bigint           not null, primary key
-#  content     :string           not null
+#  body        :string           default(""), not null
 #  rating      :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
@@ -17,20 +17,25 @@
 #  index_reviews_on_user_id_and_business_id  (user_id,business_id) UNIQUE
 #
 class Review < ApplicationRecord
-  validates_presence_of :content, :rating
+  validates_presence_of :body, :rating
   validates :user_id, presence: true, uniqueness: { scope: :business_id }
-  validate :content_too_short
-  validate :content_too_long
-
-  def content_too_long
-    errors[:content] << 'Whoops! Try to keep reviews under 5000 characters.' if content && content.length > 5000
+  validate :body_too_short
+  validate :body_too_long
+  validates :rating, inclusion: { in: (1..5) }
+  
+  def body_too_long
+    errors[:body] << 'Whoops! Try to keep reviews under 5000 characters.' if body && body.length > 5000
   end
 
-  def content_too_short
-    errors[:body] << 'Reviews must be more than five characters long.' if content && content.length < 5
+  def body_too_short
+    errors[:body] << 'Reviews must be more than five characters long.' if body && body.length < 5
   end
 
-  belongs_to :business
+  belongs_to :business,
+    foreign_key: :business_id,
+    class_name: :Business
 
-  belongs_to :user
+  belongs_to :author,
+    foreign_key: :user_id,
+    class_name: :User
 end
