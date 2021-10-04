@@ -24,7 +24,8 @@ class LoginForm extends React.Component {
     this.props.processForm(this.state);
   }
 
-  handleDemo() {
+  handleDemo(e) {
+    e.preventDefault();
     this.props.processForm({ email: "hire@me.com", password: "password" });
   }
 
