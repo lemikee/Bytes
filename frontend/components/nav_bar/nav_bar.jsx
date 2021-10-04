@@ -49,7 +49,7 @@ class NavBar extends React.Component {
               <Link to="#">Talk</Link>
             </li>
             <li>
-              <Link to="/businesses">List of Businesses</Link>
+              <Link to="/businesses">List of Businesses!</Link>
             </li>
           </ul>
         </div>
