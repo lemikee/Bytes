@@ -64,7 +64,7 @@ class ReviewForm extends React.Component {
       this.ratingTextContent(this.state.rating);
     };
   }
-
+  
   handleSubmit(e) {
     e.preventDefault();
 
