@@ -9,9 +9,7 @@ const LandingPage = (props) => (
   <div>
     <NavBarContainer />
     <div className="logoContainer">
-      {/* <h1 id="logo">Bytes</h1> */}
       <Logo />
-      {/* <SearchBar /> */}
     </div>
 
     <div className="footer">

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import NotFoundNav from "../nav_bar/not_found_nav_bar";
 const NotFoundPage = () => (
   <div id="not-found">
-    {/* <NotFoundNav /> */}
     <div id="not-found-content">
       <div id="not-found-left">
         <h2>

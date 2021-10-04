@@ -1,23 +1,56 @@
-export const RECEIVE_ALL_BUSINESSES = "RECEIVE_ALL_BUSINESSES";
-export const RECEIVE_BUSINESS = "RECEIVE_BUSINESS";
-import * as BusinessUtil from "../util/business_api_util";
+import * as BusinessApiUtil from "../util/business_api_util";
+import * as SearchApiUtil from "../util/search_api_util";
 
-const receiveAllBusinesses = (businesses) => ({
-  type: RECEIVE_ALL_BUSINESSES,
+export const RECEIVE_BUSINESSES = "RECEIVE_BUSINESSES";
+export const RECEIVE_BUSINESS = "RECEIVE_BUSINESS";
+
+export const receiveBusinesses = ({
   businesses,
+  reviews,
+  authors,
+  categories,
+}) => ({
+  type: RECEIVE_BUSINESSES,
+  businesses,
+  reviews,
+  authors,
+  categories,
 });
 
-const receiveBusiness = (business) => ({
+export const receiveBusiness = ({
+  business,
+  reviews,
+  authors,
+  categories,
+}) => ({
   type: RECEIVE_BUSINESS,
   business,
+  reviews,
+  authors,
+  categories,
 });
 
-export const fetchAllBusinesses = () => (dispatch) =>
-  BusinessUtil.fetchBusinesses().then((businesses) =>
-    dispatch(receiveAllBusinesses(businesses))
+export const fetchBusinesses = () => (dispatch) =>
+  BusinessApiUtil.fetchBusinesses().then((payload) =>
+    dispatch(receiveBusinesses(payload))
   );
 
-export const fetchBusiness = (businessId) => (dispatch) =>
-  BusinessUtil.fetchBusiness(businessId).then((business) =>
+export const fetchBusiness = (id) => (dispatch) =>
+  BusinessApiUtil.fetchBusiness(id).then((payload) =>
+    dispatch(receiveBusiness(payload))
+  );
+
+export const createBusiness = (business) => (dispatch) =>
+  BusinessApiUtil.fetchBusiness(business).then((business) =>
     dispatch(receiveBusiness(business))
+  );
+
+export const searchBusinesses = (query) => (dispatch) =>
+  SearchApiUtil.searchBusinesses(query).then((payload) =>
+    dispatch(receiveBusinesses(payload))
+  );
+
+export const searchCategories = (query) => (dispatch) =>
+  SearchApiUtil.searchCategories(query).then((payload) =>
+    dispatch(receiveBusinesses(payload))
   );

@@ -1,9 +1,22 @@
-export const fetchReviews = (businessId) =>
-  $.ajax({
-    url: `/api/businesses/${businessId}/reviews`,
-  });
+export const createReview = review => (
+    $.ajax({
+        method: 'POST',
+        url: '/api/reviews',
+        data: { review }
+    })
+);
 
-export const fetchReview = (businessId, reviewId) =>
-  $.ajax({
-    url: `/api/businesses/${businessId}/reviews/${reviewId}`,
-  });
+export const updateReview = review => (
+    $.ajax({
+        method: 'PATCH',
+        url: `/api/reviews/${review.id}`,
+        data: { review }
+    })
+);
+
+export const deleteReview = id => (
+    $.ajax({
+        method: 'DELETE',
+        url: `/api/reviews/${id}`
+    })
+);

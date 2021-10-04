@@ -1,16 +1,27 @@
-import { RECEIVE_ALL_REVIEWS, RECEIVE_REVIEW } from "../actions/review_actions";
+import merge from "lodash/merge";
 
-const reviewsReducer = (state = {}, action) => {
-  Object.freeze(state);
-  let newState = Object.assign({}, state);
+import {
+  RECEIVE_BUSINESS,
+  RECEIVE_BUSINESSES,
+} from "../actions/business_actions";
+import { RECEIVE_REVIEW, REMOVE_REVIEW } from "../actions/review_actions";
+
+const reviewsReducer = (oldState = {}, action) => {
+  Object.freeze(oldState);
   switch (action.type) {
-    case RECEIVE_ALL_REVIEWS:
+    case RECEIVE_BUSINESSES:
       return action.reviews;
+    case RECEIVE_BUSINESS:
+      return merge({}, oldState, action.reviews);
     case RECEIVE_REVIEW:
-      newState[action.review.id] = action.review;
+      const { review } = action;
+      return merge({}, oldState, { [review.id]: review });
+    case REMOVE_REVIEW:
+      const newState = merge({}, oldState);
+      delete newState[action.review.id];
       return newState;
     default:
-      return state;
+      return oldState;
   }
 };
 

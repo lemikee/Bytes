@@ -48,6 +48,9 @@ class NavBar extends React.Component {
             <li>
               <Link to="#">Talk</Link>
             </li>
+            <li>
+              <Link to="/businesses">List of Businesses</Link>
+            </li>
           </ul>
         </div>
         {navRight}

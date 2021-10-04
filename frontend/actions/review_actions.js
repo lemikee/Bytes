@@ -1,25 +1,31 @@
-export const RECEIVE_ALL_REVIEWS = "RECEIVE_ALL_REVIEWS";
+import * as ReviewApiUtil from "../util/review_api_util";
+
 export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
-import * as ReviewUtil from "../util/review_api_util";
+export const REMOVE_REVIEW = "REMOVE_REVIEW";
 
-const receiveAllReviews = (reviews) => {
-  return {
-    type: RECEIVE_ALL_REVIEWS,
-    reviews,
-  };
-};
-
-const receiveReview = (review) => ({
+export const receiveReview = ({ review, average_rating, author }) => ({
   type: RECEIVE_REVIEW,
   review,
+  average_rating,
+  author,
 });
 
-export const fetchAllReviews = (businessId) => (dispatch) =>
-  ReviewUtil.fetchReviews(businessId).then((reviews) =>
-    dispatch(receiveAllReviews(reviews))
+export const removeReview = (payload) => ({
+  type: REMOVE_REVIEW,
+  review: payload.review,
+});
+
+export const createReview = (review) => (dispatch) =>
+  ReviewApiUtil.createReview(review).then((review) =>
+    dispatch(receiveReview(review))
   );
 
-export const fetchReview = (reviewId) => (dispatch) =>
-  ReviewUtil.fetchReview(reviewId).then((review) =>
+export const updateReview = (review) => (dispatch) =>
+  ReviewApiUtil.updateReview(review).then((review) =>
     dispatch(receiveReview(review))
+  );
+
+export const deleteReview = (id) => (dispatch) =>
+  ReviewApiUtil.deleteReview(id).then((payload) =>
+    dispatch(removeReview(payload))
   );

@@ -1,0 +1,238 @@
+.main-header {
+    min-width: 1020px;
+}
+
+.header-image {
+    padding-top: 30px;
+    background-color: #333;
+    background-size: cover;
+    background-position: 50%;
+    height: 570px;
+}
+
+.header-image-0 {
+    background-image: url('splash/splash0.jpg')
+}
+.header-image-1 {
+    background-image: url('splash/splash1.jpg')
+}
+.header-image-2 {
+    background-image: url('splash/splash2.jpg')
+}
+.header-image-3 {
+    background-image: url('splash/splash3.jpg')
+}
+.header-image-4 {
+    background-image: url('splash/splash4.jpg')
+}
+.header-image-5 {
+    background-image: url('splash/splash5.jpg')
+}
+.header-image-6 {
+    background-image: url('splash/splash6.jpg')
+}
+
+.background-tint {
+    background-color: rgba(0,0,0,.2);
+    background-blend-mode: multiply;
+}
+
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left, .nav-right {
+    display: inline-block;
+}
+ 
+.nav-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-item {
+    color: #fff;
+    display: block;
+    padding: 9px 12px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 1.28571em;
+    font-weight: 700;
+    background: none;
+    border-bottom: 2px solid transparent;
+}
+
+.header-item:hover {
+    border-bottom: 2px solid white;
+}
+
+.signup-btn {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    padding: 5px 24px 7px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.signup-btn:hover {
+    color: #666;
+    background: white;
+}
+
+
+
+.header-icon {
+    display: flex;
+    background: none;
+    align-items: center;
+    border-radius: 3px;
+    padding: 0px 6px;
+    margin-right: 4px;
+    color: white;
+}
+
+.header-icon:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.welcome-user a {
+    display: flex;
+}
+
+
+
+
+
+
+
+.header-main {
+    padding-top: 80px;
+}
+
+.header-logo-center {
+    text-align: center;
+}
+
+.header-logo {
+    background-image: url('logos/berp-winter.png');
+    background-size: 180px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header-logo a {
+    font-size: 50px;
+    line-height: 160px;
+    color: transparent;
+}
+
+
+
+
+.header-search-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search-left {
+    position: relative;
+}
+
+.search-left, .search-right {
+    flex: 1;
+}
+
+.search-left label, .search-right label,
+.search-input, .search-input input {
+    width: 100%;
+}
+
+.search-left:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    bottom: 8px;
+    width: 1px;
+    background-color: #ccc;
+}
+
+.search-left-inner, .search-right-inner {
+    display: flex;
+}
+
+.search-desc, .search-input {
+    background-color: white;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.search-desc {
+    font-weight: 700;
+    color: #666;
+}
+
+.search-submit {
+    color: #fff;
+    background-color: #d32323;
+    padding: 0;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-submit:hover {
+    background-color: #be2020;
+}
+
+.search-start {
+    border-radius: 4px 0 0 4px;
+}
+
+.search-end {
+    border-radius: 0 4px 4px 0;
+}
+
+
+
+
+
+
+.user-prof-align {
+    display: flex;
+    align-items: row;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.user-prof-align img {
+    width: 36px;
+    height: 36px;
+    border-radius: 3px 0 0 3px;
+}
+
+.arrow-dropdown {
+    font-size: 16px !important;
+    padding: 9px 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 3px 3px 0;
+}
+
+.arrow-dropdown:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+

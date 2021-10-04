@@ -8,7 +8,7 @@ class Api::BusinessesController < ApplicationController
     @business = Business.create!(business_params)
     render :show
   end
-
+  
   def show
     @business = Business.find_by(id: params[:id])
     if @business
