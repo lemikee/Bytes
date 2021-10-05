@@ -50,7 +50,7 @@ const LandingPage = (props) => (
           </div>
         </div>
         <div className="col-four col">
-          <p className="col-title">Languages</p>
+          <p className="col-title">Language</p>
           <br />
           <p to="#" className="col-content">
             English

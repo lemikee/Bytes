@@ -146,17 +146,17 @@ class LoginForm extends React.Component {
 
               </div>
               <div className="col-four col">
-                <p className="col-title">Languages</p>
+                <p className="col-title">Language</p>
                 <br />
-                <Link to="#" className="col-content">
+                <p to="#" className="col-content">
                   English
-                </Link>
+                </p>
                 <br />
                 <p className="col-title">Countries</p>
                 <br />
-                <Link to="#" className="col-content">
+                <p to="#" className="col-content">
                   United States
-                </Link>
+                </p>
               </div>
             </div>
           </div>
