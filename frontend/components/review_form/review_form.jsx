@@ -64,7 +64,7 @@ class ReviewForm extends React.Component {
       this.ratingTextContent(this.state.rating);
     };
   }
-  
+
   handleSubmit(e) {
     e.preventDefault();
 
@@ -89,7 +89,7 @@ class ReviewForm extends React.Component {
       "Yay! I'm a fan.",
       "Woohoo! As good as it gets!",
     ];
-
+    
     const business = this.props.businesses[this.props.match.params.businessId];
     if (business === undefined) {
       return <div></div>;
