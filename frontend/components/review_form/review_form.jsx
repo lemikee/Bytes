@@ -259,7 +259,7 @@ class ReviewForm extends React.Component {
   }
 
   navigateToBusinessShow() {
-    const url = `/biz/${this.props.match.params.businessId}`;
+    const url = `/businesses/${this.props.match.params.businessId}`;
     this.props.history.push(url);
   }
 
@@ -348,7 +348,9 @@ class ReviewForm extends React.Component {
 
           <div className="review-form-content">
             <div className="review-form-title">
-              <Link to={`/biz/${business.id}`}>{business.business_name}</Link>
+              <Link to={`/businesses/${business.id}`}>
+                {business.business_name}
+              </Link>
             </div>
 
             <div>
