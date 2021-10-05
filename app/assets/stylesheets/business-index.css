@@ -28,22 +28,20 @@
     color: transparent;
 }
 
-
-
-
-
 .business-header-search {
     width: 71%;
 }
 
 .business-header-search span {
-    font-size: 14px !important;
+    font-size: 18px !important;
     padding: 8.5px 12px !important;
 }
 
 .business-header-search .search-desc {
     padding-right: 0px !important;
     color: #333;
+    font-size: 18px;
+    /* vertical-align: middle; */
 }
 
 .business-header-search .search-submit {

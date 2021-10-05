@@ -3,7 +3,7 @@
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
-fieldset, label, input, textarea,
+fieldset, label, textarea,
 span, article, footer, time, small {
   margin: 0;
   padding: 0;
@@ -25,19 +25,16 @@ ul {
 img {
   /* display: block;
   width: 100%;
-  height: auto; */
+  height: auto;
 }
 
-input[type="password"],
+/* input[type="password"],
 input[type="email"],
 input[type="text"],
 input[type="submit"],
 textarea,
 button {
-  /*
-  Get rid of native styling. Read more here:
-  http://css-tricks.com/almanac/properties/a/appearance/
-  */
+
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -45,4 +42,4 @@ button {
 button,
 input[type="submit"] {
   cursor: pointer;
-}
+} */

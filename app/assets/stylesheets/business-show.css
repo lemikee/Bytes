@@ -6,7 +6,7 @@
     top: -9999px;
     left: -9999px;
     right: -9999px;
-    bottom: 0px;   
+    bottom: 0px;
 }
 
 .business-show-header {
@@ -227,7 +227,7 @@
     text-decoration: underline;
 }
 
-.bold { 
+.bold {
     font-weight: 700;
 }
 
@@ -262,6 +262,8 @@
     color: #0073bb;
     cursor: pointer;
     font-size: 14px;
+    border-style: none;
+    background-color: transparent;
 }
 
 .button-link:hover {

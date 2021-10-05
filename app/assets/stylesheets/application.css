@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require css_reset
+
  *= require static_pages
  *= require_self
  */
