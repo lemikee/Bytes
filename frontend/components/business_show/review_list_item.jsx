@@ -48,12 +48,12 @@ const ReviewListItem = ({
     <li className="business-show-review">
       <div className="review-sidebar">
         <div className="review-item-user-profile">
-          {/* <img className="review-user-pic" src={author.photo}></img> */}
+          <img className="review-user-pic" src={author.photo}></img>
           <div className="review-user-info">
             <p className="review-user-name">
-              {/* {author.first_name} {author.last_name[0]}. */}
+              {author.first_name} {author.last_name[0]}.
             </p>
-            {/* <p className="review-user-zip">{author.zip_code}</p> */}
+            <p className="review-user-zip">{author.zip_code}</p>
           </div>
         </div>
         <ul className="review-sidebar-links">
