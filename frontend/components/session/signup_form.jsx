@@ -227,7 +227,7 @@ class SignupForm extends React.Component {
                   English
                 </p>
                 <br />
-                <p className="col-title">Countries</p>
+                <p className="col-title">Country</p>
                 <br />
                 <p to="#" className="col-content">
                   United States
