@@ -2,8 +2,9 @@ class Api::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      @user.photo.attach(io: File.open('./app/assets/images/user/demo.png'), filename: 'demo.png')
       login!(@user)
-      render :show
+      render "api/users/show"
     else
       render json: @user.errors.full_messages, status: 422
     end
@@ -14,7 +15,7 @@ class Api::UsersController < ApplicationController
     if @user
       render :show
     else
-      render json: ['There is no user here']
+      render json: ['There is no user here.']
     end
   end
 

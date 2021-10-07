@@ -6,6 +6,8 @@
 #  movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #  Character.create(name: 'Luke', movie: movies.first)
 
+require 'open-uri'
+
 User.destroy_all
 Business.destroy_all
 Review.destroy_all
@@ -20,7 +22,6 @@ demo = User.create!({
   last_name:"Me",
   zip_code: 94720
 })
-
 
 user1 = User.create(first_name: 'Yu-Huan', last_name: 'Wu', email: 'mary123@mail.com', password: 'password', zip_code: '94012')
 user2 = User.create(first_name: 'Darrick', last_name: 'Shin', email: 'mikesmith@mail.com', password: 'password', zip_code: '94016')
@@ -49,6 +50,10 @@ user24 = User.create(first_name: 'Sofia', last_name: 'Perez', email: 'sofiathegr
 user25 = User.create(first_name: 'Quyen', last_name: 'Tran', email: 'qtpie@mail.com', password: 'password', zip_code: '94132')
 
 demo.photo.attach(io: File.open('./app/assets/images/user/demo.png'), filename: 'demo.png')
+# file01 = open('https://eat-bytes-seeds.s3.us-west-1.amazonaws.com/demo.png')
+
+# demo.photo.attach(io: file01, filename: 'demo.png')
+
 user1.photo.attach(io: File.open('./app/assets/images/user/user1.png'), filename: 'user1.jpg')
 user2.photo.attach(io: File.open('./app/assets/images/user/user2.jpeg'), filename: 'user2.jpg')
 user3.photo.attach(io: File.open('./app/assets/images/user/user3.jpg'), filename: 'user3.jpg')

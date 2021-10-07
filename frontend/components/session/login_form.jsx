@@ -120,7 +120,7 @@ class LoginForm extends React.Component {
                   <a href="https://angel.co/u/mike-le-5">AngelList</a>
                 </div>
 
-
+              
               </div>
               <div className="col-two col">
                 <p className="col-title">Discover</p>

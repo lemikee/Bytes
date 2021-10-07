@@ -17,6 +17,7 @@
 #  index_users_on_email          (email) UNIQUE
 #  index_users_on_session_token  (session_token) UNIQUE
 #
+
 class User < ApplicationRecord
   validates_presence_of :first_name, :last_name, :email, :password_digest, :session_token, :zip_code
   validates_uniqueness_of :email, :session_token

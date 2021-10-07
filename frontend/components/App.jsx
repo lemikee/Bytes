@@ -11,7 +11,6 @@ import BusinessShowContainer from "./business_show/business_show_container";
 import CreateReviewFormContainer from "./review_form/create_review_form_container";
 import EditReviewFormContainer from "./review_form/edit_review_form_container";
 import BusinessSearchContainer from "./business/business_search_container";
-import FooterComponent from "./greeting/footer";
 
 const App = () => (
   <div>
@@ -35,8 +34,8 @@ const App = () => (
         path="/businesses/:businessId/edit/:reviewId"
         component={EditReviewFormContainer}
       />
+
       <Route path="/businesses/search" component={BusinessSearchContainer} />
-      {/* <Route path="/" component={FooterComponent} /> */}
       <Route exact path="/" component={LandingPage} />
       <Route component={NotFoundPage} />
     </Switch>
