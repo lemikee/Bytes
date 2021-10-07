@@ -8,7 +8,7 @@ class Api::ReviewsController < ApplicationController
       render json: @review.errors.full_messages, status: 422
     end
   end
-
+  
   def update
     @review = Review.find_by(user_id: params[:review][:user_id], business_id: params[:review][:business_id])
     if @review.update_attributes(review_params)

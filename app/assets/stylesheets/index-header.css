@@ -11,25 +11,25 @@
 }
 
 .header-image-0 {
-    background-image: url('splash/splash0.jpg')
+    background-image: url('landingpage_background.jpeg')
 }
 .header-image-1 {
-    background-image: url('splash/splash1.jpg')
+    background-image: url('landingpage_background.jpeg')
 }
 .header-image-2 {
-    background-image: url('splash/splash2.jpg')
+    background-image: url('landingpage_background.jpeg')
 }
 .header-image-3 {
-    background-image: url('splash/splash3.jpg')
+   background-image: url('landingpage_background.jpeg')
 }
 .header-image-4 {
-    background-image: url('splash/splash4.jpg')
+    background-image: url('landingpage_background.jpeg')
 }
 .header-image-5 {
-    background-image: url('splash/splash5.jpg')
+    background-image: url('landingpage_background.jpeg')
 }
 .header-image-6 {
-    background-image: url('splash/splash6.jpg')
+    background-image: url('landingpage_background.jpeg')
 }
 
 .background-tint {
@@ -52,7 +52,7 @@
 .nav-left, .nav-right {
     display: inline-block;
 }
- 
+
 .nav-content {
     display: flex;
     flex-direction: row;
@@ -82,14 +82,13 @@
     padding: 5px 24px 7px;
     margin-left: 5px;
     margin-right: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .signup-btn:hover {
-    color: #666;
+    color: black;
     background: white;
 }
-
-
 
 .header-icon {
     display: flex;
@@ -109,8 +108,14 @@
     display: flex;
 }
 
-
-
+button.header-item.signup-btn {
+  /* background-color: blue; */
+  /* /* width: 50%; */
+  width: 100px;
+  height: 25%;
+  text-align: center;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 
 
@@ -124,7 +129,7 @@
 }
 
 .header-logo {
-    background-image: url('logos/berp-winter.png');
+    /* background-image: url(''); */
     background-size: 180px 80px;
     background-position: center;
     background-repeat: no-repeat;
@@ -158,6 +163,7 @@
 .search-left label, .search-right label,
 .search-input, .search-input input {
     width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .search-left:after {
@@ -168,6 +174,7 @@
     bottom: 8px;
     width: 1px;
     background-color: #ccc;
+    padding: 20px 0px;
 }
 
 .search-left-inner, .search-right-inner {
@@ -178,11 +185,18 @@
     background-color: white;
     padding: 12px;
     font-size: 18px;
+    height: 45px;
+    border-style: none !important;
+    display: flex;
+align-items: center
 }
 
 .search-desc {
     font-weight: 700;
     color: #666;
+    height: 45px;
+    display: flex;
+align-items: center
 }
 
 .search-submit {
@@ -192,6 +206,7 @@
     width: 64px;
     display: flex;
     justify-content: center;
+
 }
 
 .search-submit:hover {
@@ -200,6 +215,8 @@
 
 .search-start {
     border-radius: 4px 0 0 4px;
+    display: flex;
+align-items: center
 }
 
 .search-end {

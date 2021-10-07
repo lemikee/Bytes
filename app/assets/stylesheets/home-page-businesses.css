@@ -1,6 +1,6 @@
 .home-page-businesses-container {
     min-width: 1020px;
-    padding-top: 36px; 
+    padding-top: 36px;
 }
 
 .home-page-businesses-arrange {
@@ -20,12 +20,7 @@
     color: #d32323;
 }
 
-.hp-business-location-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-}
+
 
 .hp-business-locations {
     display: flex;

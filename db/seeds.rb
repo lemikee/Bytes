@@ -49,10 +49,10 @@ user23 = User.create(first_name: 'Hannah', last_name: 'Foster', email: 'fosterlo
 user24 = User.create(first_name: 'Sofia', last_name: 'Perez', email: 'sofiathegreat@mail.com', password: 'password', zip_code: '94133')
 user25 = User.create(first_name: 'Quyen', last_name: 'Tran', email: 'qtpie@mail.com', password: 'password', zip_code: '94132')
 
-demo.photo.attach(io: File.open('./app/assets/images/user/demo.png'), filename: 'demo.png')
-# file01 = open('https://eat-bytes-seeds.s3.us-west-1.amazonaws.com/demo.png')
+# demo.photo.attach(io: File.open('./app/assets/images/user/demo.png'), filename: 'demo.png')
+file01 = open('https://eat-bytes-seeds.s3.us-west-1.amazonaws.com/user/demo.png')
 
-# demo.photo.attach(io: file01, filename: 'demo.png')
+demo.photo.attach(io: file01, filename: 'demo.png')
 
 user1.photo.attach(io: File.open('./app/assets/images/user/user1.png'), filename: 'user1.jpg')
 user2.photo.attach(io: File.open('./app/assets/images/user/user2.jpeg'), filename: 'user2.jpg')

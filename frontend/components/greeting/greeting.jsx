@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import UserProfileContainer from "./user_profile_container";
+import NavBarContainer from "../nav_bar/nav_bar_container";
 
 const Greeting = ({ currentUser, demoLogin, path }) => {
   const sessionLinks = () => (
@@ -17,8 +18,22 @@ const Greeting = ({ currentUser, demoLogin, path }) => {
     </ul>
   );
 
-  const personalGreeting = () => <ul className="welcome-user nav-content"></ul>;
-  
+  const personalGreeting = () => (
+    <ul className="welcome-user nav-content">
+      <a href="https://www.linkedin.com/in/mike-le/">
+        {/* <li className="header-icon">
+          <i className="material-icons">chat_bubble</i>
+        </li>
+      </a>
+      <a href="">
+        <li className="header-icon">
+          <i className="material-icons">notifications</i>
+        </li> */}
+      </a>
+      <NavBarContainer />
+    </ul>
+  );
+
   const personalGreetingWithoutBtns = () => (
     <ul className="welcome-user nav-content">
       <UserProfileContainer />

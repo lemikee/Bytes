@@ -39,7 +39,7 @@ class NavBar extends React.Component {
       <div className="nav-bar">
         <div className="align-left">
           <ul>
-            <li>
+            {/* <li>
               <Link to="#">Write a Review</Link>
             </li>
             <li>
@@ -47,10 +47,10 @@ class NavBar extends React.Component {
             </li>
             <li>
               <Link to="#">Talk</Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/businesses">List of Businesses!</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         {navRight}
