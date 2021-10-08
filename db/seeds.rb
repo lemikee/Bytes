@@ -314,9 +314,9 @@ business16.pics.attach(io: File.open('./app/assets/images/business/16-don/don7.j
 
 # App Academy
 Review.create(business_id: business1.id, user_id: user1.id, rating: 5,
-              body: "Great restaurant, been coming here almost everyday for the past 3 months now. Super friendly staff, and serve exotic food and drinks such as python and java. Be warned, sometime the staff go off the rails and react strangely if you don't comment.  Would stop by again, 7 out of 5 stars.")
-Review.create(business_id: business1.id, user_id: user2.id, rating: 5,
               body: "I've been waiting almost four months and no one has taken my order.")
+Review.create(business_id: business1.id, user_id: user2.id, rating: 5,
+              body: "Great restaurant, been coming here almost everyday for the past 3 months now. Super friendly staff, and serve exotic food and drinks such as python and java. Be warned, sometime the staff go off the rails and react strangely if you don't comment.  Would stop by again, 7 out of 5 stars.")
 Review.create(business_id: business1.id, user_id: user6.id, rating: 3,
               body: "I really wanted to eat a burger but apparently they only sell boba here. The boba wasn't too bad though.")
 Review.create(business_id: business1.id, user_id: user9.id, rating: 4,
@@ -329,9 +329,7 @@ Review.create(business_id: business1.id, user_id: user19.id, rating: 5,
               body: 'I made reservations every single breakfast, lunch, and dinner through their progress tracker system, but it failed on me 8 times.')
 
 # San Tung
-Review.create(business_id: business2.id, user_id: user4.id, rating: 5, body: "Dry Fried Chicken Wings: Hands down the best chicken wings I have ever eaten. My partner and I were visiting some friends in the area and these heavenly wings (and a couple sides of rice) were the only thing requested.
-The wings themselves had great flavor and AMAZING crunch. But really, I think the crispiness of the wings is what makes the wings so good (and addicting). The sauce was a balanced mix of sweet and spicy (very mild, if I had to rate it), which was also great over rice.
-In terms of logistics, we had to call ahead to order. Street parking wasn't too painful, pick up was smooth, and service was friendly. We even picked up an additional order togo after leaving our friends place! This is definitely a necessary place to stop the next time we are in Norcal.")
+Review.create(business_id: business2.id, user_id: user4.id, rating: 5, body: "Dry Fried Chicken Wings: Hands down the best chicken wings I have ever eaten.")
 Review.create(business_id: business2.id, user_id: user5.id, rating: 4, body: "I don't know why, but I don't really get it. I prefer SO over San Tung's chicken wings. I feel like this place is just all hype. A lot of people really like the original dried fried chicken wings. I honestly thought it was way too salty for me.
 We also ordered the garlic noodles, and it was super oily. I felt like that day the restaurant was off or something. We went on a day when the line  was around the corner. It was extremely long and we waited for an hour.
 The line wasn't worth it. It was ALRIGHT.")
@@ -342,7 +340,7 @@ Review.create(business_id: business2.id, user_id: user10.id, rating: 4, body: "I
 Review.create(business_id: business2.id, user_id: user11.id, rating: 4, body: "Their chicken is cooked to order and it's an amazing balance of crunchiness if the outside and soft and tender on the inside. The sauce itself is like a sweet and salty with a little bit of a kick to it. It's definitely one of those things that's better when you eat it right when it comes out but as of when I went, they were still doing take out only. I would still recommend trying it even if it's take out!")
 
 # Fog House
-Review.create(business_id: business3.id, user_id: user1.id, rating: 5, body: 'We are visiting from LA. Liked the food so much do we went back the next day. The filet mignon and blondie desert were delish! Jose took good care of us, exceptional service. Plan to return whenever we return to SF.')
+Review.create(business_id: business3.id, user_id: user1.id, rating: 5, body: 'The filet mignon and blondie desert were delish! Jose took good care of us, exceptional service. ')
 Review.create(business_id: business3.id, user_id: user11.id, rating: 5, body: "I made a reservation on a Wednesday for 2 at 8pm, and was shortly accommodated. A few minutes after checking in with the host at 7:55, I asked if it would be possible to get a window side table just for the lovely ocean sunset views, and surprisingly, they had a table! I'm very grateful for the short wait and accommodations.")
 Review.create(business_id: business3.id, user_id: user21.id, rating: 5, body: "This restaurant is THE eatery to visit when you're at Pier 39 in San Francisco! Although the 40 minutes wait was quite long, it was totally worth it. The food, service and view were superb.")
 Review.create(business_id: business3.id, user_id: user2.id, rating: 5, body: 'Execellent chip and chips and delicious clam chowers...wanted to finish strong and Bongjovi our server recommended the creme brulee...amazing.')
@@ -355,7 +353,7 @@ Must try: clam chowder bread bowl, and ahi tuna. Btw the lobster tails are prett
 Will be visiting again')
 
 # El Farolito
-Review.create(business_id: business4.id, user_id: user3.id, rating: 5, body: "I got the Super Burrito (chicken) both times and it's been consistently good. It is a big portion, and I couldn't finish my burrito the second time around because I had a big breakfast earlier that day. But it's a good amount for the price, especially when considering it's in San Francisco!")
+Review.create(business_id: business4.id, user_id: user3.id, rating: 5, body: "I got the Super Burrito (chicken) both times and it's been consistently good.")
 Review.create(business_id: business4.id, user_id: user14.id, rating: 4, body: "Favorite burrito place in SF! After tax and all it's still under $9! It's the size of my forearm and definitely more than enough for a meal. And for me personally, it's like two meals.")
 Review.create(business_id: business4.id, user_id: user15.id, rating: 5, body: "Dudeee, this place will forever be the best Mexican spot I have ever been to. I recently moved to New York, and you don't know how many times I cried at a Mexican restaurant because it'll just never be the sameeee.....")
 Review.create(business_id: business4.id, user_id: user16.id, rating: 5, body: "A lot of restaurants these days pay attention more to the quality of the setting and not the food quality. El Farolito's attention to food quality is top notch and they don't skim on the fillings!")
@@ -365,7 +363,7 @@ Review.create(business_id: business4.id, user_id: user19.id, rating: 5, body: "T
 Review.create(business_id: business4.id, user_id: user23.id, rating: 5, body: "I did not realize that there were 12 locations around the Bay Area with this being the original that was opened in 1983.  This location again has made SF Chronicle's Top 100 Restaurants list. Arriving around 12:30pm, there was a line out the door. With a large menu above the counter, I knew I wanted to get a burrito and went with a regular al pastor burrito. After you order, you wait off to the side for your order number to be called. If you want to eat in, there are six tables in the main room and about ten tables in a back patio area.")
 
 # Bob's Donuts
-Review.create(business_id: business5.id, user_id: user6.id, rating: 4, body: "One of the best donut places I have ever been to. People rave it and its legit. My boyfriend and i come here all the time late at night since we're always in the area and I love the crumble donut and maple donut. It's so fresh and soft and the service is great! The nice asian lady working there is always welcoming and making sure that we get what we want. I have yet to try their huge maple donut but once I'm off my diet perhaps I'll try it! HAHA. But definitely worth a shot, its 24 hours which is AMAZING! Do some drinking on polk, some clubbing in downtown, and come here for donuts, thats what I call an amazing weekend!")
+Review.create(business_id: business5.id, user_id: user6.id, rating: 4, body: "One of the best donut places I have ever been to. People rave it and its legit.")
 Review.create(business_id: business5.id, user_id: user9.id, rating: 4, body: "I get into a mood where I need a food adventure and hubs and I get out of town and find somewhere cool neither of us had been. This is how we found bob's, and wow, I'm so glad we did. I was unsure when we arrived in the area, which was pretty grungy the morning we arrived, but we got in line and waited with everyone else.")
 Review.create(business_id: business5.id, user_id: user12.id, rating: 5, body: "Came here after bar hopping around Polk and this was a great way to end to night with some great donuts. The service was fast to get through the line and staff was friendly.")
 Review.create(business_id: business5.id, user_id: user15.id, rating: 5, body: "I'm not even a fan of donuts, but the boyf was craving some and we came here. He ordered two of the crumble donuts and of course I stole a few bites. These have to be the perfect donuts in terms of texture and sweetness. Not too sweet, not too hard, literally they nailed the recipe to their donuts!")
@@ -375,7 +373,7 @@ Review.create(business_id: business5.id, user_id: user24.id, rating: 4, body: "T
 Review.create(business_id: business5.id, user_id: user3.id, rating: 5, body: "It is THE donut place to go.")
 
 # Mr. Szechuan
-Review.create(business_id: business6.id, user_id: user1.id, rating: 5, body: "I've been driving by Mr. Szechuan several times a week for the past year.  I noticed that Taraval St. appeared to be a place with some life, but I was always in a hustle so hadn't stopped to take a closer look.  Last Saturday we found ourselves at Riordan High School, in the cold fog :).  Our sons were coaching a camp for high school athletes and we went to watch.  As it came to a close about 6:30 PM we went looking for some food.  I suggested we head to Taraval St.    ")
+Review.create(business_id: business6.id, user_id: user1.id, rating: 5, body: "I've been driving by Mr. Szechuan several times a week for the past year.")
 Review.create(business_id: business6.id, user_id: user2.id, rating: 4, body: "Their service is pretty good, food is a bit lackluster...")
 Review.create(business_id: business6.id, user_id: user3.id, rating: 5, body: "Trying these dishes with friends were a lot of fun!  I didn't think any particular dish was spicy, and my friend said that she's had some dishes that were spicier.  So, I'd say if you're looking for a spicy dish, I don't think any of the above I'd say fulfills that criteria.  However, they're all pretty delicious, served over rice, with friends.")
 Review.create(business_id: business6.id, user_id: user5.id, rating: 4, body: "Wow I'm so happy I found this place. This will be my go-to place when I want some spicy tong tingling mala goodness. Reasonable prices, large portions, tasty food, quick delivery -- what more can I want?")
@@ -383,7 +381,7 @@ Review.create(business_id: business6.id, user_id: user6.id, rating: 5, body: "Th
 Review.create(business_id: business6.id, user_id: user7.id, rating: 1, body: "Overpriced and undersesoned!")
 
 # PPQ Dungeness Island
-Review.create(business_id: business7.id, user_id: user8.id, rating: 5, body: "Amazing restaurant for crab! The peppercorn crab as well as the roasted garlic and butter crab were delicious! My family really enjoyed the house seasoning sauce on the lobster as well. We also got the crab fried rice and basil eggplant which were great additions.")
+Review.create(business_id: business7.id, user_id: user8.id, rating: 5, body: "Amazing restaurant for crab! The peppercorn crab as well as the roasted garlic and butter crab were delicious!")
 Review.create(business_id: business7.id, user_id: user9.id, rating: 5, body: "Superb salt and pepper crab meal for 2 was all I expected + more!")
 Review.create(business_id: business7.id, user_id: user10.id, rating: 3, body: "Our roasted crab was both much smaller than what my parents said they had last time here and was $75. Not PPQ Dungeness Island's fault, it's just the current state of things right now.")
 Review.create(business_id: business7.id, user_id: user11.id, rating: 5, body: "The star of our dish was the crab, and we were very pleased with the food experience. The dry sauce that seasoned the crab was so good! I enjoyed it by mixing it with the crab meat I pulled out from the legs. The crab meat was plump and stringy, but it was flavorful.")
@@ -392,7 +390,7 @@ Review.create(business_id: business7.id, user_id: user13.id, rating: 5, body: "S
 Review.create(business_id: business7.id, user_id: user14.id, rating: 2, body: "They're not what they use to be. Its not consistent at all.")
 
 # The Italian Homemade Company
-Review.create(business_id: business8.id, user_id: user15.id, rating: 4, body: "Everything was great, but super rich. My hubby said the meat lasagna was a little on the salty side, but overall pretty good. He'd probably get the pesto ravioli next time. They were out of the gnocchi, but I'd try that.")
+Review.create(business_id: business8.id, user_id: user15.id, rating: 4, body: "Everything was great, but super rich.")
 Review.create(business_id: business8.id, user_id: user16.id, rating: 3, body: "I was excited about trying this but just wasn't completely satisfied. My lasagna was very salty and my bfs was very watery like if the sauce was watered down.")
 Review.create(business_id: business8.id, user_id: user17.id, rating: 4, body: "Solid pasta but their selection is limited.")
 Review.create(business_id: business8.id, user_id: user18.id, rating: 2, body: "Its like Olive Garden, but more expensive.")
@@ -401,7 +399,7 @@ Review.create(business_id: business8.id, user_id: user20.id, rating: 3, body: "W
 Review.create(business_id: business8.id, user_id: user21.id, rating: 5, body: "Incredible spot, highly recommend!! It's super casual with homey vibes; you order inside before finding a seat outside. They bring your food to you on paper plates.")
 
 # Trattoria Contadina
-Review.create(business_id: business9.id, user_id: user1.id, rating: 4, body: "Our family of 4 had a lovely time eating here at this restaurant. It's been here since the 1980s (wow!!!!) which is quite astonishing. It's a very charming Italian restaurant, no fuss, just classic and traditional Italian food.")
+Review.create(business_id: business9.id, user_id: user1.id, rating: 4, body: "It's a very charming Italian restaurant, no fuss, just classic and traditional Italian food.")
 Review.create(business_id: business9.id, user_id: user2.id, rating: 5, body: "This spot is so amazing!! Was looking for a last minute date night restaurant for my boyfriend and I. I called them and they were very  genuine on the phone. They were able to give me a reservation in a heart beat. Once we arrive we were sat quickly. Supper cute restaurant!")
 Review.create(business_id: business9.id, user_id: user22.id, rating: 5, body: "went at 8:15 on a Saturday night. My bf called to see if they had anything available and luckily they had a table for us in 2 hours! Besides calling, I would first try their website to book. On their website they may charge you $25 per person if you cancel. So I'm glad we were able to make reservations over the phone.")
 Review.create(business_id: business9.id, user_id: user23.id, rating: 5, body: "We were told about this place by some friends... and boy were we glad they recommended this place! It's just amazing!!!!!")
@@ -410,7 +408,7 @@ Review.create(business_id: business9.id, user_id: user25.id, rating: 4, body: "V
 Review.create(business_id: business9.id, user_id: user14.id, rating: 3, body: "Always wanted to try this place since we drive by all the time. The place is a cute small place and everyone was friendly. The pastas were a little on the heavy side. The appetizer was good and unusual. Overall this place was ok.")
 
 # Sweet Maple
-Review.create(business_id: business10.id, user_id: user2.id, rating: 4, body: "Sweet maple is a yelp star and it never disappointed me. Definitely loved its egg benedict, millionaire bacon, and crab omelette!")
+Review.create(business_id: business10.id, user_id: user2.id, rating: 4, body: "Sweet maple is a star and it never disappointed me. Definitely loved its egg benedict, millionaire bacon, and crab omelette!")
 Review.create(business_id: business10.id, user_id: user7.id, rating: 5, body: "The wild pizza was my favorite! The cheese was very light and creamy and had great spread when pulling a slice out of the pie. The abundance of vegetables on top of the pizza (like the mushrooms and arugula) were fragrant and added nice textural contrast.")
 Review.create(business_id: business10.id, user_id: user5.id, rating: 5, body: "Was in town for the Padres/Giants series this week.  Yelped breakfast restaurants near our hotel and found Sweet Maple.  Two of us ordered the Frisco scramble and the third ordered an omelette, all sharing the Millionaire's Bacon sampler.  All were in agreement, it was the best breakfast any of us had enjoyed in recent years.  Wish I didn't have to travel from San Diego to enjoy their food.  If it were local instead, it would definitely replace my local favorite breakfast spot.")
 Review.create(business_id: business10.id, user_id: user13.id, rating: 2, body: "We had reservations and weren't able to be seated until three hours after our reservation time.")
@@ -419,7 +417,7 @@ Review.create(business_id: business10.id, user_id: user16.id, rating: 5, body: "
 Review.create(business_id: business10.id, user_id: user17.id, rating: 5, body: "Boyfriend and I have been looking for a nice bottomless mimosa place in the Bay Area and we heard about Sweet Maple. We were in the city and decided to finally try it out. However, the menu was so overwhelming for us that we decided to skip the mimosas and attack the variety of foods they have to offer.")
 
 # Nopa
-Review.create(business_id: business11.id, user_id: user1.id, rating: 5, body: "Absolutely delicious.  I'm vegetarian and loved the tangine (sp?).  So flavorful.  THe rest of my party were very happy with the food too.  Loved that, although it may be hard to get a reservation, once we were in we never felt rushed at all.")
+Review.create(business_id: business11.id, user_id: user1.id, rating: 5, body: "Absolutely delicious.")
 Review.create(business_id: business11.id, user_id: user2.id, rating: 4, body: " Expect to drop some cash here. The main dishes are minimum $20 and are not big enough to share. You'll probably want some sides as well. It's pricey so although I did like it, I wouldn't make it a regular spot. Regardless, I think it's worth checking out at least once.")
 Review.create(business_id: business11.id, user_id: user3.id, rating: 3, body: "Nopa is a great spot and it's clearly popular. Our seasonal vegetarian selection was OK in my opinion. The Moroccan vegetable tajin was underwhelming and the lasagna was definitely unique but not what we expected. We enjoyed the warm goat cheese, but I think we'll try the restaurant again when the dishes circulate.")
 Review.create(business_id: business11.id, user_id: user13.id, rating: 4, body: "Definitely make a reservation. It's always a busy popular place. Even so you probably won't get seated on time and have to wait awhile. Came here last on a Wednesday night with a reservation. Food and cocktails were amazing as always. Service was ver very slow for everything we ordered, from water to entrees. Favorite food was the smoked trout and pappardelle pasta. Cute outdoor seating as well.")
@@ -428,7 +426,7 @@ Review.create(business_id: business11.id, user_id: user6.id, rating: 2, body: "T
 Review.create(business_id: business11.id, user_id: user17.id, rating: 1, body: "Modestly better than throwing money in the trashcan.")
 
 # WoodHouse Fish Company
-Review.create(business_id: business12.id, user_id: user4.id, rating: 1, body: "Do not dine here. Frozen lobster. NOT FRESH. Awful. Way overpriced.  We dined on a Tuesday night. Not crowded. Long wait. Food was not fresh, tasty or delicious.")
+Review.create(business_id: business12.id, user_id: user4.id, rating: 1, body: "Do not dine here. Frozen lobster. NOT FRESH. Awful. Way overpriced.")
 Review.create(business_id: business12.id, user_id: user5.id, rating: 2, body: "Two stars because the food was technically edible.")
 Review.create(business_id: business12.id, user_id: user6.id, rating: 1, body: "It's like Red Lobster, but three days old.")
 Review.create(business_id: business12.id, user_id: user14.id, rating: 3, body: "Tasty lobster rolls but high prices!")
@@ -437,7 +435,7 @@ Review.create(business_id: business12.id, user_id: user7.id, rating: 5, body: "A
 Review.create(business_id: business12.id, user_id: user18.id, rating: 1, body: "Don't waste your time. The lobster roll was what I went to this place for due to the reviews, I'm highly disappointed. It's was 30% lobster and 70% bread. I paid 56.00 for 2 small lobster roll. What a waste of money! I've had better! Waste of time")
 
 # Mensho Tokyo
-Review.create(business_id: business13.id, user_id: user15.id, rating: 5, body: "This was probably one of the best ramen I've ever had! I've been to NY and Japan. Love this take on a spicy ramen. The cumin and the lamb is a wonderful alteration to this dish. It adds a lot of spice and gaminess.")
+Review.create(business_id: business13.id, user_id: user15.id, rating: 5, body: "This was probably one of the best ramen I've ever had!")
 Review.create(business_id: business13.id, user_id: user7.id, rating: 2, body: "I've heard rave reviews from friends, strangers and Uber drivers alike, but unfortunately, I didn't find the food nearly as appetizing. Mensho Tokyo is a cute little ramen shop that offers all communal and bar seating with a capacity of about 28. This place is extremely popular, so expect a wait of roughly 45 - 90 minutes, depending on when you go.")
 Review.create(business_id: business13.id, user_id: user9.id, rating: 5, body: "The broth is so rich and creamy!")
 Review.create(business_id: business13.id, user_id: user11.id, rating: 3, body: "A lot of people say that this is the best ramen in SF. I don't necessarily agree with that, but there is one specific element of their ramen that is the best in SF: the broth. Their broth is truly unmatched. Unbothered by the lowly competition. It's a thick, ultra creamy, umami lover's paradise. The broth reminds me of one of my favorite ramen places in LA.")
@@ -445,7 +443,7 @@ Review.create(business_id: business13.id, user_id: user12.id, rating: 3, body: "
 Review.create(business_id: business13.id, user_id: user19.id, rating: 2, body: "Boyfriend and I found this place on yelp and although there were mixed reviews, we decided it was worth a try.  Honestly, for a $16 bowl of ramen, you'd expect more. It was very mediocre. I've had way better ramen for much less.")
 
 # Foreign Cinema
-Review.create(business_id: business14.id, user_id: user1.id, rating: 4, body: "I thoroughly enjoyed my meal but I found the menu confusing. I'd blame it on my lack of knowledge with culinary arts. The meal was good! But maybe just a bit underwhelming? Maybe I ordered something that didn't measure up with my personal preferences?")
+Review.create(business_id: business14.id, user_id: user1.id, rating: 4, body: "I thoroughly enjoyed my meal but I found the menu confusing. I'd blame it on my lack of knowledge with culinary arts. The meal was good!")
 Review.create(business_id: business14.id, user_id: user2.id, rating: 1, body: "This place is magical,  in that is magically ruins your appetite.")
 Review.create(business_id: business14.id, user_id: user3.id, rating: 5, body: "I mean, I'd give it 4 stars just for the atmosphere. If not 5!! I don't want to ruin the experience for those who haven't been, but it honestly feels magical when you walk through the doors (as lame as I may sound lol).")
 Review.create(business_id: business14.id, user_id: user4.id, rating: 5, body: "Ahhh!! This place is truly so good! It is apparently extremely hard to book and we got a table indoors at 6pm for dinner. They play a movie daily around 8pm and there is a lounge outdoors that people can sit and watch the movie as well. Otherwise, you could get a table outdoors around that time and watch the movie while eating dinner.")
@@ -461,7 +459,7 @@ Review.create(business_id: business15.id, user_id: user11.id, rating: 4, body: "
 Review.create(business_id: business15.id, user_id: user12.id, rating: 5, body: "They also gave us a complimentary dessert since they asked if we could switch tables a few min after we got seated, and it was some black sesame thing topped with fruit. It was AMAZING and I wanted more. It was not too sweet and had a kind of rice pudding ish texture.")
 
 # Don Pistos
-Review.create(business_id: business16.id, user_id: user14.id, rating: 2, body: "I also really wouldn't recommend the queso fondido. It is truly just a bowl of melted cheese with a little bit of chorizo sprinkled on top. Before you can finish the cheese, it's hardened/thick.")
+Review.create(business_id: business16.id, user_id: user14.id, rating: 2, body: "Come for the food, stay for the drinks.")
 Review.create(business_id: business16.id, user_id: user15.id, rating: 5, body: "So yummy! Came here yesterday with a group of people for my fiance's birthday and service and food did NOT disappoint. We got chips, salsa, queso, tacos, sashimi, enchiladas and the regular and hibiscus margaritas.")
 Review.create(business_id: business16.id, user_id: user16.id, rating: 5, body: "The food is so fresh and tasty!")
 Review.create(business_id: business16.id, user_id: user17.id, rating: 1, body: "HORRRRRRRIBLE service. For some reason the day I went, the staff mentioned that someone had booked ALL the reservations the whole morning. But...it looked like they never showed up...so I don't know why they didn't call to confirm or pass up their seats especially 45+ min into the reservation. They told me they didn't take reservations after a certain time, but for some reason they were holding it for this person who reserved it after that time...It literally made no sense and I don't even know why they bother to have an online Yelp waitlist option if they don't even use it.")
