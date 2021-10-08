@@ -367,7 +367,7 @@ class BusinessShow extends React.Component {
                 </div>
               </div>
 
-              <div className="business-show-main-sidebar">
+              <div className="business-show-main-sidebar sticky">
                 <FakeSidebar />
               </div>
             </div>
