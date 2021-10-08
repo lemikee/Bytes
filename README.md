@@ -18,9 +18,7 @@ The built in Google Maps features allows users to accurately see where each rest
 
 ### Reviews
 One of the most important aspects of Bytes is the ability to share and interact with other users. Users can not only read the experiences of other users, but if they are logged in, they can write reviews and share their insights as well. If they are not logged in, they will be promoted to do so. When a user is logged in, they can delete and edit their review.
-<img src="./app/assets/images/readme/review_crud" alt="reviews" width="1800">
-
-
+<img src="./app/assets/images/readme/review_crud.png" alt="reviews" width="1800">
 
 ## Anticipated Features
 Some anticipated updates for the future are: <br>
