@@ -1,9 +1,8 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import { AuthRoute } from "../util/route_util";
+import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import { Switch } from "react-router";
 import Home from "./greeting/home";
-// import LandingPage from "./landing_page/landing_page";
 import NotFoundPage from "./not_found_page/not_found";
 import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
@@ -26,12 +25,12 @@ const App = () => (
         path="/businesses/:businessId"
         component={BusinessShowContainer}
       />
-      <Route
+      <ProtectedRoute
         exact
         path="/businesses/:businessId/review"
         component={CreateReviewFormContainer}
       />
-      <Route
+      <ProtectedRoute
         exact
         path="/businesses/:businessId/edit/:reviewId"
         component={EditReviewFormContainer}

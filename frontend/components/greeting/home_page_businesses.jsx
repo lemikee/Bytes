@@ -11,43 +11,45 @@ const HomePageBusinesses = () => {
             <div className="hp-business-card">
               <Link to={"/businesses/1"}>
                 <div className="card-photo">
-                  <img src="https://i.imgur.com/KWfOeZG.jpg"></img>
+                  <img src="https://s3-media0.fl.yelpcdn.com/bphoto/pvWRWivkeyGy7g7UF9Me1g/o.jpg"></img>
                 </div>
               </Link>
               <div className="card-content">
-                <Link to={"/businesses/1"}>
-                  <div className="card-content-name">Fog Harbor Fish House</div>
+                <Link to={"/businesses/2"}>
+                  <div className="card-content-name">San Tung</div>
                 </Link>
-                <div className="card-content-category">Seafood, Bars</div>
-                <div className="card-content-category">Fisherman's Wharf</div>
+                <div className="card-content-category">Seafood, Asian</div>
+                <div className="card-content-category">Sunset</div>
               </div>
             </div>
             <div className="hp-business-card">
               <Link to={"/businesses/2"}>
                 <div className="card-photo">
-                  <img src="https://i.imgur.com/OGdpiCo.jpg"></img>
+                  <img src="https://s3-media0.fl.yelpcdn.com/bphoto/GFiWHKO9cuZWak4kb7UV9w/o.jpg"></img>
                 </div>
               </Link>
               <div className="card-content">
-                <Link to={"/businesses/2"}>
-                  <div className="card-content-name">Marufuku Ramen</div>
+                <Link to={"/businesses/13"}>
+                  <div className="card-content-name">Mensho Tokyo</div>
                 </Link>
                 <div className="card-content-category">Japanese, Ramen</div>
-                <div className="card-content-category">Japan Center</div>
+                <div className="card-content-category">Lower Nob Hill</div>
               </div>
             </div>
             <div className="hp-business-card">
               <Link to={"/businesses/3"}>
                 <div className="card-photo">
-                  <img src="https://i.imgur.com/8RSWlLE.jpg"></img>
+                  <img src="https://s3-media0.fl.yelpcdn.com/bphoto/wVSjQbcmAoEuxp0y7ckx6w/o.jpg"></img>
                 </div>
               </Link>
               <div className="card-content">
                 <Link to={"/businesses/3"}>
-                  <div className="card-content-name">The House</div>
+                  <div className="card-content-name">
+                    Bob's Donut and Pastry Shop
+                  </div>
                 </Link>
-                <div className="card-content-category">Asian Fusion</div>
-                <div className="card-content-category">North Beach</div>
+                <div className="card-content-category">Breakfast, Bakery</div>
+                <div className="card-content-category">Polk Gulch</div>
               </div>
             </div>
           </div>
