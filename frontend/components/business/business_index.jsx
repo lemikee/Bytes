@@ -51,18 +51,12 @@ class BusinessIndex extends React.Component {
 
               <div className="business-index-map-container">
                 <div className="business-index-map sticky">
-                  <div className="business-map-buttons">
-                    <button className="map-expand-btn">
-                      <i className="material-icons">chevron_left</i>Previous
-                    </button>
-                    <button className="map-search-btn">More</button>
-                  </div>
                   <div className="business-map-google">
                     <BusinessMap
                       businesses={this.props.businesses}
                       zoom={true}
-                      lat={37.7985}
-                      lng={-122.417303}
+                      lat={37.08}
+                      lng={-122.42}
                     />
                   </div>
                 </div>
