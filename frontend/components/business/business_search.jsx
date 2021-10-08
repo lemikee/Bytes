@@ -44,7 +44,6 @@ class BusinessSearch extends React.Component {
               <div className="business-main-list">
                 <ul>{businesses}</ul>
               </div>
-
               <div className="business-index-map-container">
                 <div className="business-index-map sticky">
                   <div className="business-map-google">
