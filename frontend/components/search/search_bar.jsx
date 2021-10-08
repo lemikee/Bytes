@@ -56,7 +56,7 @@ class SearchBar extends React.Component {
 
               <div className="search-submit search-end">
                 <button type="submit">
-                  <i className="fas fa-search"></i>
+                  <i className="material-icons">search</i>
                 </button>
               </div>
             </div>

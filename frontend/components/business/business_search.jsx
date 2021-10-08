@@ -47,14 +47,6 @@ class BusinessSearch extends React.Component {
 
               <div className="business-index-map-container">
                 <div className="business-index-map sticky">
-                  <div className="business-map-buttons">
-                    <button className="map-expand-btn">
-                      <i className="material-icons">chevron_left</i>Mo' Map
-                    </button>
-                    <button className="map-search-btn">
-                      Redo Search In Map
-                    </button>
-                  </div>
                   <div className="business-map-google">
                     <BusinessMap
                       businesses={this.props.businesses}

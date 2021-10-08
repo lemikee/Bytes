@@ -39,7 +39,7 @@ const App = () => (
       <Route path="/businesses/search" component={BusinessSearchContainer} />
       <Route component={NotFoundPage} />
     </Switch>
-      <Route path="/" component={FooterComponent} />
+    <Route path="/" component={FooterComponent} />
   </div>
 );
 

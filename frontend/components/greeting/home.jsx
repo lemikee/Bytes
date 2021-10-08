@@ -6,13 +6,12 @@ import HomePageBusinesses from './home_page_businesses';
 import Logo from "../logo/logo";
 
 const Home = () => {
-    const headerRand = Math.floor(Math.random() * 7);
 
     return (
       <div>
         <header className="main-header">
           <div
-            className={`header-image header-image-${headerRand} background-tint`}
+            className={`header-image header-image background-tint`}
           >
             <div className="header-content">
               <div className="nav-main">
