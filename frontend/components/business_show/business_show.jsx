@@ -56,12 +56,9 @@ class BusinessShow extends React.Component {
         <li className="business-show-review">
           <div className="review-sidebar">
             <div className="review-item-user-profile">
-              {/* <img className="review-user-pic" src={currentUser.photo}></img> */}
               <div className="review-user-info">
                 <p className="review-user-name">
-                  {/* {currentUser.first_name} {currentUser.last_name[0]}. */}
                 </p>
-                {/* <p className="review-user-zip">{currentUser.zip_code}</p> */}
               </div>
             </div>
           </div>
