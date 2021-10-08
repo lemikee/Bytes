@@ -55,8 +55,8 @@ class BusinessIndex extends React.Component {
                     <BusinessMap
                       businesses={this.props.businesses}
                       zoom={true}
-                      lat={37.08}
-                      lng={-122.42}
+                      lat={37.7985}
+                      lng={-122.417303}
                     />
                   </div>
                 </div>
