@@ -10,9 +10,7 @@ const Home = () => {
     return (
       <div>
         <header className="main-header">
-          <div
-            className={`header-image header-image background-tint`}
-          >
+          <div className={`header-image header-image background-tint`}>
             <div className="header-content">
               <div className="nav-main">
                 <div className="nav-left">
@@ -40,7 +38,7 @@ const Home = () => {
                   </h1>
                 </div>
 
-                <SearchBarContainer placeholder="takeout, burgers, pizza..." />
+                <SearchBarContainer placeholder="try searching Italian, donuts, or fish and chips..." />
               </div>
             </div>
           </div>

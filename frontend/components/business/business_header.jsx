@@ -20,7 +20,7 @@ const BusinessHeader = (props) => {
           </div>
 
           <div className="business-header-search">
-            <SearchBarContainer placeholder="tacos, cheap dinner, Max's" />
+            <SearchBarContainer placeholder="try searching Italian, donuts, or fish and chips..." />
           </div>
 
           <div className="greeting-buttons">

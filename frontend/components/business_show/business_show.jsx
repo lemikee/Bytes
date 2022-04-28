@@ -299,7 +299,7 @@ class BusinessShow extends React.Component {
                         </div>
                       </span>
                     </li>
-                    <li className="business-mapbox-item">
+                    {/* <li className="business-mapbox-item">
                       <span>
                         <i className="material-icons">directions</i>
                       </span>
@@ -314,7 +314,7 @@ class BusinessShow extends React.Component {
                           </a>
                         </div>
                       </span>
-                    </li>
+                    </li> */}
                     <li className="business-mapbox-item">
                       <span>
                         <i className="material-icons">local_phone</i>

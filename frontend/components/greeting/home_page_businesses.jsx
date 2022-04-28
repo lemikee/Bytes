@@ -45,7 +45,7 @@ const HomePageBusinesses = () => {
               <div className="card-content">
                 <Link to={"/restaurant/5"}>
                   <div className="card-content-name">
-                    Bob's Donut and Pastry Shop
+                    Bob's Donuts and Pastry Shop
                   </div>
                 </Link>
                 <div className="card-content-category">Breakfast, Bakery</div>

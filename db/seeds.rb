@@ -83,7 +83,7 @@ business3 = Business.create(business_name: 'Fog Harbor Fish House', address: 'Pi
                             city: 'San Francisco', state: 'CA', zip_code: '94133', latitude: 37.80964, longitude: -122.41025, phone: '(415) 421-2442', website: 'fogharbor.com', price: '$$$')
 business4 = Business.create(business_name: 'El Farolito', address: '2779 Mission St,', city: 'San Francisco',
                             state: 'CA', zip_code: '94110', latitude: 37.75287062559472, longitude: -122.41838717998685, phone: '(415) 824-7877', website: 'elfarolitosf.com', price: '$')
-business5 = Business.create(business_name: "Bob's Donut and Pastry Shop", address: '1621 Polk St',
+business5 = Business.create(business_name: "Bob's Donuts and Pastry Shop", address: '1621 Polk St',
                             city: 'San Francisco', state: 'CA', zip_code: '94109', latitude: 37.79240255741854, longitude: -122.421093611636, phone: '(415) 776-3141', website: 'bobsdonutssf.com', price: '$')
 business6 = Business.create(business_name: 'Mr. Szechuan', address: '890 Taraval St', city: 'San Francisco',
                             state: 'CA', zip_code: '94116', latitude: 37.74328765193854, longitude: -122.4754769246456, phone: '(415) 753-8788', website: 'mr-szechuan.business.site', price: '$$')
