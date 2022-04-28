@@ -43,10 +43,7 @@ class SignupForm extends React.Component {
               <h2>Sign Up for Bytes</h2>
               <p className="subheading">Connect with great local businesses</p>
               <p className="legal">
-                By continuing, you agree to Bytes'
-                <Link to="#">Terms of Service</Link>
-                and acknowledge Bytes'
-                <Link to="#">Privacy Policy</Link>
+                By continuing, you agree to give Mike a phone screening.
               </p>
               <form className="session-form" onSubmit={this.handleSubmit}>
                 {/* <input

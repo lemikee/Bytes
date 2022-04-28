@@ -54,9 +54,7 @@ class LoginForm extends React.Component {
                 </Link>
               </p>
               <p className="legal">
-                By logging in, you agree to Bytes'
-                <Link to="#">Terms of Service</Link> and
-                <Link to="#">Privacy Policy</Link>
+                By logging in, you agree to give Mike a phone screening.
               </p>
               <form className="session-form">
                 <input
