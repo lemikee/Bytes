@@ -9,13 +9,13 @@ const HomePageBusinesses = () => {
           <h2>Popular Businesses</h2>
           <div className="hp-business-list-arrange">
             <div className="hp-business-card">
-              <Link to={"/businesses/1"}>
+              <Link to={"/restaurant/1"}>
                 <div className="card-photo">
                   <img src="https://s3-media0.fl.yelpcdn.com/bphoto/pvWRWivkeyGy7g7UF9Me1g/o.jpg"></img>
                 </div>
               </Link>
               <div className="card-content">
-                <Link to={"/businesses/2"}>
+                <Link to={"/restaurant/2"}>
                   <div className="card-content-name">San Tung</div>
                 </Link>
                 <div className="card-content-category">Seafood, Asian</div>
@@ -23,13 +23,13 @@ const HomePageBusinesses = () => {
               </div>
             </div>
             <div className="hp-business-card">
-              <Link to={"/businesses/2"}>
+              <Link to={"/restaurant/2"}>
                 <div className="card-photo">
                   <img src="https://s3-media0.fl.yelpcdn.com/bphoto/GFiWHKO9cuZWak4kb7UV9w/o.jpg"></img>
                 </div>
               </Link>
               <div className="card-content">
-                <Link to={"/businesses/13"}>
+                <Link to={"/restaurant/13"}>
                   <div className="card-content-name">Mensho Tokyo</div>
                 </Link>
                 <div className="card-content-category">Japanese, Ramen</div>
@@ -37,13 +37,13 @@ const HomePageBusinesses = () => {
               </div>
             </div>
             <div className="hp-business-card">
-              <Link to={"/businesses/3"}>
+              <Link to={"/restaurant/3"}>
                 <div className="card-photo">
                   <img src="https://s3-media0.fl.yelpcdn.com/bphoto/wVSjQbcmAoEuxp0y7ckx6w/o.jpg"></img>
                 </div>
               </Link>
               <div className="card-content">
-                <Link to={"/businesses/3"}>
+                <Link to={"/restaurant/3"}>
                   <div className="card-content-name">
                     Bob's Donut and Pastry Shop
                   </div>

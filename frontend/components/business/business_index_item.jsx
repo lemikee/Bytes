@@ -37,7 +37,7 @@ class BusinessIndexItem extends React.Component {
       <li className="business-index-item">
         <div className="business-item-content-main">
           <div className="business-item-content-arrange">
-            <Link to={`/businesses/${business.id}`}>
+            <Link to={`/restaurant/${business.id}`}>
               <img className="business-image" src={business.photo}></img>
             </Link>
             <div>
@@ -45,7 +45,7 @@ class BusinessIndexItem extends React.Component {
                 <div className="business-item-info-left">
                   <p className="business-item-title">
                     {idx}. &nbsp;{" "}
-                    <Link to={`/businesses/${business.id}`}>
+                    <Link to={`/restaurant/${business.id}`}>
                       {business.business_name}
                     </Link>
                   </p>

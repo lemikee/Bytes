@@ -20,19 +20,15 @@ const App = () => (
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <Route exact path="/businesses" component={BusinessIndexContainer} />
-      <Route
-        exact
-        path="/businesses/:businessId"
-        component={BusinessShowContainer}
-      />
+      <Route exact path="/restaurant/:businessId" component={BusinessShowContainer} />
       <ProtectedRoute
         exact
-        path="/businesses/:businessId/review"
+        path="/restaurant/:businessId/review"
         component={CreateReviewFormContainer}
       />
       <ProtectedRoute
         exact
-        path="/businesses/:businessId/edit/:reviewId"
+        path="/restaurant/:businessId/edit/:reviewId"
         component={EditReviewFormContainer}
       />
       <Route path="/businesses/search" component={BusinessSearchContainer} />

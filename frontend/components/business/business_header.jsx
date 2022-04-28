@@ -17,11 +17,11 @@ const BusinessHeader = (props) => {
       <div className="business-main-header">
         <div className="business-header-arrange">
           <div className="business-header-logo">
-            <Link to={"/"}>Bytes</Link>
+            <Link to={"/"}>Beerp</Link>
           </div>
 
           <div className="business-header-search">
-            <SearchBarContainer placeholder="takeout, burgers, pizza..." />
+            <SearchBarContainer placeholder="tacos, cheap dinner, Max's" />
           </div>
 
           <div className="greeting-buttons">

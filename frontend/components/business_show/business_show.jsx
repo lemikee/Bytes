@@ -135,7 +135,7 @@ class BusinessShow extends React.Component {
                 </div>
               </div>
               <span className="create-review-link">
-                <Link to={`/businesses/${this.props.business.id}/review`}>
+                <Link to={`/restaurant/${this.props.business.id}/review`}>
                   Start your review of{" "}
                   <span className="bold">
                     {this.props.business.business_name}.
@@ -183,7 +183,7 @@ class BusinessShow extends React.Component {
     });
 
     let buttonTitle = "Write a Review";
-    let buttonLink = `/businesses/${this.props.businessId}/review`;
+    let buttonLink = `/restaurant/${this.props.businessId}/review`;
     let starsComponent = true;
     if (!this.props.currentUser) {
       starsComponent = false;
@@ -195,7 +195,7 @@ class BusinessShow extends React.Component {
         this.props.reviews[i].user_id === this.props.currentUser.id
       ) {
         buttonTitle = "Edit My Review";
-        buttonLink = `/businesses/${this.props.businessId}/edit/${this.props.reviews[i].id}`;
+        buttonLink = `/restaurant/${this.props.businessId}/edit/${this.props.reviews[i].id}`;
         starsComponent = false;
       }
     }

@@ -17,7 +17,7 @@ const ReviewListItem = ({
     if (currentUser && review.user_id === currentUser.id) {
       return (
         <li>
-          <Link to={`/businesses/${business.id}/edit/${review.id}`}>
+          <Link to={`/restaurant/${business.id}/edit/${review.id}`}>
             <div className="review-link">
               <i className="material-icons">create</i>
               <span>Edit review</span>

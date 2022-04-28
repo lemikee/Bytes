@@ -13,7 +13,7 @@ Bytes, a Yelp clone, is a social media application that allows users to discover
 * HTML and CSS
 
 ### Maps
-The built in Google Maps features allows users to accurately see where each resturant is located. One of the primary factors for choosing a resturant is location and proximity. Users can zoom in and out to see more geographical context and pan around the map. The map is not only available on the index page, but each show page as well.
+The built in Google Maps features allows users to accurately see where each restaurant is located. One of the primary factors for choosing a restaurant is location and proximity. Users can zoom in and out to see more geographical context and pan around the map. The map is not only available on the index page, but each show page as well.
 <br/>
 <br/>
 <img src="./app/assets/images/readme/map_feature.png" alt="" width="1800">
