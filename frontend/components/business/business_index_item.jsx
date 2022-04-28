@@ -62,15 +62,17 @@ class BusinessIndexItem extends React.Component {
                     </span>
                     <button
                       className="button-link"
+                      id="smaller-btn-one"
                       type="submit"
                       value={category1}
                       onClick={this.handleSubmit}
                     >
                       {category1}
                     </button>
-                    ,&nbsp;
+                    &nbsp;
                     <button
                       className="button-link"
+                      id="smaller-btn-two"
                       type="submit"
                       value={category2}
                       onClick={this.handleSubmit}

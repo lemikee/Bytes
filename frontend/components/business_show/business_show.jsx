@@ -234,16 +234,16 @@ class BusinessShow extends React.Component {
                     {this.props.business.price}
                   </span>
                   <button
-                    className="button-link"
+                    className="button-link" id="cat-one"
                     type="submit"
                     value={category1}
                     onClick={this.handleSubmit}
                   >
                     {category1}
                   </button>
-                  ,&nbsp;
+                   &nbsp;
                   <button
-                    className="button-link"
+                    className="button-link" id="cat-two"
                     type="submit"
                     value={category2}
                     onClick={this.handleSubmit}
