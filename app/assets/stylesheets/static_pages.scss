@@ -213,7 +213,7 @@ p.legal {
   font-size: 100px;
   font-family: "Varela Round";
   letter-spacing: -5px;
-  // font-weight: bold;
+  font-weight: bolder;
 }
 
 .fab.fa-yelp.float-child.blue::before {
@@ -266,7 +266,6 @@ p.legal {
 }
 
 .nav-bar ul {
-
   display: flex;
   text-align: left;
   background-color: transparent;
@@ -299,8 +298,8 @@ a {
   // color: white;
   text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    // text-shadow: -1.11px -1.11px 0 #d32323, 1.11px -1.11px 0 #d32323,
-    // -1.11px 1.11px 0 #d32323, 1.11px 1.11px 0 #d32323;
+  // text-shadow: -1.11px -1.11px 0 #d32323, 1.11px -1.11px 0 #d32323,
+  // -1.11px 1.11px 0 #d32323, 1.11px 1.11px 0 #d32323;
 }
 
 a:hover {
@@ -338,12 +337,12 @@ a:hover {
   background-color: transparent !important;
   color: white;
   font-weight: 700;
-  width: 150px
+  width: 150px;
 }
 
 .clear-button:hover {
-    color: black;
-    background: white !important;
+  color: black;
+  background: white !important;
 }
 
 .logoContainer {
@@ -446,8 +445,8 @@ button {
 }
 
 button .fa-search::before {
-    display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   padding-left: 24px;
 }
 
@@ -546,7 +545,7 @@ p.align-right {
 }
 
 .align-left {
-   display: flex;
+  display: flex;
   align-items: left;
 }
 
@@ -569,3 +568,49 @@ p.align-right {
 .not-found-bar img {
   margin-left: 10px;
 }
+
+.not-found-nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-logo {
+  height: 65px;
+  position: absolute;
+  top: 0%;
+  background-color: #d32323;
+}
+
+#not-found-text-container {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    /* it center the item vertically */
+    // justify-content: center;
+    margin: 15%;
+    	margin-left: auto;
+    margin-right: auto; 
+}
+
+#not-found-cat {
+  height: 360px;
+	margin-left: 32%;
+padding-top: 20px;
+}
+
+#not-found-message {
+  font-size: 40px;
+}
+
+#not-found-message-container {
+  position: absolute
+}
+
