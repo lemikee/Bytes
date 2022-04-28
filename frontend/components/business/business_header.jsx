@@ -5,7 +5,6 @@ import GreetingContainer from "../greeting/greeting_container";
 
 const BusinessHeader = (props) => {
   const handleSubmit = (e) => {
-    console.log(e.currentTarget.value);
     e.preventDefault();
     props
       .searchCategories({ category: e.currentTarget.value })

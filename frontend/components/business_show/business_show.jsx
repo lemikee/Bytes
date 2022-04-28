@@ -307,10 +307,7 @@ class BusinessShow extends React.Component {
                         <div>
                           <a
                             href={
-                              "https://www.google.com/maps/@" +
-                              this.props.business.latitude +
-                              "," +
-                              this.props.business.longitude
+                              `https://www.google.com/maps/dir/${this.props.business.latitude},+${this.props.business.longitude}/`
                             }
                           >
                             Get directions

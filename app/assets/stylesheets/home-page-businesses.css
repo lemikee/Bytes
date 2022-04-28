@@ -1,3 +1,9 @@
+.search-icon {
+  display: block;
+  margin-left: 30%;
+  margin-right: auto;
+}
+
 .home-page-businesses-container {
   min-width: 1020px;
   padding-top: 36px;
