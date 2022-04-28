@@ -34,7 +34,7 @@ const Footer = () => (
         <p className="col-title">Other Projects</p>
         <br />
         <div id="email-container">
-          <a href="https://lemikee.github.io/pokemon-Battle/">
+          <a href="https://lemikee.github.io/pokemon-battle/">
             Pokemon Battle!
           </a>
         </div>

@@ -87,14 +87,16 @@ class SignupForm extends React.Component {
                   onChange={this.update("zip_code")}
                 />
 
+                {this.props.errors.map((error, i) => (
+                  <li key={i}>{error}</li>
+                ))}
+
                 <button className="signup-login-btn">Sign Up</button>
                 <p className="align-right">
                   Already on Bytes? <Link to="/login">Log in</Link>
                 </p>
               </form>
-              {this.props.errors.map((error, i) => (
-                <li key={i}>{error}</li>
-              ))}
+
             </div>
             <img
               id="signup-login-logo"

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ButtonMailto from "../email/email";
-// import Resume from "../../../app/assets/documents/Resume.pdf";
-import CustomModal from "../modal/about_modal";
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -72,6 +70,9 @@ class LoginForm extends React.Component {
                   onChange={this.update("password")}
                   placeholder="Password"
                 />
+                {this.props.errors.map((error, i) => (
+                  <li key={i}>{error}</li>
+                ))}
                 <Link to="#" className="align-right">
                   Forgot password?
                 </Link>
@@ -91,10 +92,6 @@ class LoginForm extends React.Component {
                   Demo Log In
                 </button>
               </form>
-
-              {this.props.errors.map((error, i) => (
-                <li key={i}>{error}</li>
-              ))}
             </div>
             <img
               id="signup-login-logo"

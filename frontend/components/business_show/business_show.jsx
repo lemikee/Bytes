@@ -172,7 +172,7 @@ class BusinessShow extends React.Component {
       website = this.props.business.website;
     }
 
-    const reviews = this.props.reviews.map((review) => {
+    const reviews = this.props.reviews.reverse().map((review) => {
       return (
         <ReviewListItemContainer
           key={review.id}

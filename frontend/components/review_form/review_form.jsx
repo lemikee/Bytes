@@ -80,7 +80,7 @@ class ReviewForm extends React.Component {
 
   render() {
     const placeholder =
-      "Your review helps others learn about great local businesses.\n\nPlease don't review this business if you received a freebie for writing this review, or if you're connected in any way to the owner or employees.";
+      "Your review helps others find great local resturants!\n\nReviews must be between 5 and 5000 characters long.";
     const options = [
       "Select your rating",
       "Eek! Methinks not.",
@@ -216,6 +216,7 @@ class ReviewForm extends React.Component {
                   >
                     <span>Post Review</span>
                   </button>
+                  
                 </div>
               </form>
             </div>

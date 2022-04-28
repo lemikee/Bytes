@@ -32,7 +32,7 @@ class UserProfile extends Component {
                 <button className="user-prof-btn" onClick={ this.showMenu }>
                     <div className="user-prof-align">
                         <img src={this.props.currentUser.photo}></img>
-                        <i className="material-icons arrow-dropdown">arrow_drop_down</i>
+                        {/* <i className="material-icons arrow-dropdown">arrow_drop_down</i> */}
                     </div>
                 </button>
 
