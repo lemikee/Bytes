@@ -4,6 +4,14 @@
     <title>Bytes</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta property="og:title" content="bytes" />
+     <meta property='og:image' content="<%= image_url('project_pic.png') %>"/>
+     <meta property="og:description"
+       content="A pixel perfect Yelp clone built on React/Redux, Ruby on Rails, and PostgreSQL."
+     />
+     <meta property="og:url"
+       content="https://eat-bytes.herokuapp.com/"
+     />
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['MAPS_API_KEY']}" %>
@@ -14,15 +22,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
 
-    <%# Meta tags for Linkedin %>
-    <meta property="og:title" content="bytes" />
-     <meta property='og:image' content="<%= image_url('bytes_ln.png') %>"/>
-     <meta property="og:description"
-       content="A pixel perfect Yelp clone built on React/Redux, Ruby on Rails, and PostgreSQL."
-     />
-     <meta property="og:url"
-       content="http://eat-bytes.herokuapp.com/"
-     />
 
 
     <script type="text/javascript">
