@@ -9,13 +9,19 @@ const Footer = () => (
         <br />
 
         <div id="email-container">
-          <a href="https://www.linkedin.com/in/mike-le/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/mike-le/" target="_blank">
+            LinkedIn
+          </a>
         </div>
         <div id="email-container">
-          <a href="https://github.com/lemikee">Github</a>
+          <a href="https://github.com/lemikee" target="_blank">
+            Github
+          </a>
         </div>
         <div id="email-container">
-          <a href="https://angel.co/u/mike-le-5">AngelList</a>
+          <a href="https://angel.co/u/mike-le-5" target="_blank">
+            AngelList
+          </a>
         </div>
       </div>
       <div className="col-two col">
