@@ -342,7 +342,7 @@ Review.create(business_id: business1.id, user_id: user2.id, rating: 5,
 Review.create(business_id: business1.id, user_id: user6.id, rating: 3,
               body: "Liked the vibe and the food I got was good but would have liked more vegan options. I got the quinoa salad and although yummy it was a little small and I wasn't blown away. DEF a fan of the popover though. It comes for the table and was so fluffy and delicious!")
 Review.create(business_id: business1.id, user_id: user9.id, rating: 4,
-              body: 'Our first time here, and my 100th Yelp review! We chose outdoor seating, which was a pleasant ambiance. Noise was average, not much traffic noise and seating felt somewhat private. Service was super attentive and accommodating to my wifes tree nut allergy.')
+              body: 'We chose outdoor seating, which was a pleasant ambiance. Noise was average, not much traffic noise and seating felt somewhat private. Service was super attentive and accommodating to my wifes tree nut allergy.')
 Review.create(business_id: business1.id, user_id: user12.id, rating: 4,
               body: 'The food and atmosphere are amazing! Their doughnuts are a MUST try and an excellent dessert option!')
 Review.create(business_id: business1.id, user_id: user18.id, rating: 3,
