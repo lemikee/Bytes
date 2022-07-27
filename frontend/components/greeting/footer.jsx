@@ -40,8 +40,13 @@ const Footer = () => (
         <p className="col-title">Other Projects</p>
         <br />
         <div id="email-container">
-          <a href="https://lemikee.github.io/pokemon-battle/">
-            Pokemon Battle!
+          <a href="https://lemikee.github.io/pokemon-battle/" target="_blank">
+            Pokemon Battle
+          </a>
+        </div>
+        <div id="email-container">
+          <a href="https://blindr-job.herokuapp.com/#/" target="_blank">
+            blindr
           </a>
         </div>
       </div>

@@ -16,7 +16,7 @@ const BusinessHeader = (props) => {
       <div className="business-main-header">
         <div className="business-header-arrange">
           <div className="business-header-logo">
-            <Link to={"/"}>Beerp</Link>
+            <Link to={"/"}>bytes</Link>
           </div>
 
           <div className="business-header-search">
