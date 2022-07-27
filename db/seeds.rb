@@ -136,7 +136,10 @@ business16 = Business.create(business_name: 'Don Pistos', address: '510 Union St
 business1.photo.attach(io: File.open('./app/assets/images/business/1-wayfare/wayfare1.jpeg'),
                        filename: 'wayfare1-1.jpeg')
 business1.pics.attach(io: File.open('./app/assets/images/business/1-wayfare/wayfare2.jpeg'), filename: 'wayfare2.jpeg')
-business1.pics.attach(io: File.open('./app/assets/images/business/1-wayfare/wayfare3.jpeg'), filename: 'wayfare3.jpeg')
+business1.pics.attach(io: File.open('./app/assets/images/business/1-wayfare/wayfare3.jpeg'), filename: 'wayfar3.jpeg')
+business1.pics.attach(io: File.open('./app/assets/images/business/1-wayfare/wayfare4.jpeg'), filename: 'wayfare4.jpeg')
+business1.pics.attach(io: File.open('./app/assets/images/business/1-wayfare/wayfare5.jpeg'), filename: 'wayfare5.jpeg')
+business1.pics.attach(io: File.open('./app/assets/images/business/1-wayfare/wayfare6.jpeg'), filename: 'wayfare6.jpeg')
 
 # San Tung
 business2.photo.attach(io: File.open('./app/assets/images/business/2-san/san1.jpeg'), filename: 'san1-1.jpeg')
@@ -331,7 +334,7 @@ business16.pics.attach(io: File.open('./app/assets/images/business/16-don/don6.j
 business16.pics.attach(io: File.open('./app/assets/images/business/16-don/don7.jpeg'), filename: 'don7.jpeg')
 business16.pics.attach(io: File.open('./app/assets/images/business/16-don/don7.jpeg'), filename: 'don8.jpeg')
 
-# App Academy
+# Wayfare Tavern
 Review.create(business_id: business1.id, user_id: user1.id, rating: 5,
               body: 'Mussels, fried chicken, salad, so many sides - everything was delicious! Great for a work dinner or fun night out with friends. Dishes are great to share.')
 Review.create(business_id: business1.id, user_id: user2.id, rating: 5,
@@ -341,11 +344,11 @@ Review.create(business_id: business1.id, user_id: user6.id, rating: 3,
 Review.create(business_id: business1.id, user_id: user9.id, rating: 4,
               body: 'Our first time here, and my 100th Yelp review! We chose outdoor seating, which was a pleasant ambiance. Noise was average, not much traffic noise and seating felt somewhat private. Service was super attentive and accommodating to my wifes tree nut allergy.')
 Review.create(business_id: business1.id, user_id: user12.id, rating: 4,
-              body: "The food and atmosphere are amazing! Their doughnuts are a MUST try and an excellent dessert option!")
+              body: 'The food and atmosphere are amazing! Their doughnuts are a MUST try and an excellent dessert option!')
 Review.create(business_id: business1.id, user_id: user18.id, rating: 3,
               body: 'Food wise, if you are looking for a restaurant with an un-ambitious menu, but decently executed, this is your spot. The menu was filled with staples and standards that you might expect at, say, a hotel lobby restaurant. Something for everyone, but nothing that is going to expand your palate or culinary horizons. The food was good, though certainly nothing to write home about.')
 Review.create(business_id: business1.id, user_id: user19.id, rating: 5,
-              body: "Wayfare Tavern reminds me of an old school speakeasy bar. I mean, let's talk about the bar. You got baristas with slick back hair, dressed neatly, and a bar filled with dark liquor. Not to mention the bowl of crisp potato chips by the bar (they tasted very good by the way), it all looked aesthetically pleasing.")
+              body: 'We ordered almost everything! Burrata toast was my favorite appetizer but the beef tartare was special too.')
 
 # San Tung
 Review.create(business_id: business2.id, user_id: user4.id, rating: 5,
