@@ -341,11 +341,11 @@ Review.create(business_id: business1.id, user_id: user6.id, rating: 3,
 Review.create(business_id: business1.id, user_id: user9.id, rating: 4,
               body: 'Our first time here, and my 100th Yelp review! We chose outdoor seating, which was a pleasant ambiance. Noise was average, not much traffic noise and seating felt somewhat private. Service was super attentive and accommodating to my wifes tree nut allergy.')
 Review.create(business_id: business1.id, user_id: user12.id, rating: 4,
-              body: "Wayfare Tavern reminds me of an old school speakeasy bar. I mean, let's talk about the bar. You got baristas with slick back hair, dressed neatly, and a bar filled with dark liquor. Not to mention the bowl of crisp potato chips by the bar (they tasted very good by the way), it all looked aesthetically pleasing.")
+              body: "The food and atmosphere are amazing! Their doughnuts are a MUST try and an excellent dessert option!")
 Review.create(business_id: business1.id, user_id: user18.id, rating: 3,
               body: 'Food wise, if you are looking for a restaurant with an un-ambitious menu, but decently executed, this is your spot. The menu was filled with staples and standards that you might expect at, say, a hotel lobby restaurant. Something for everyone, but nothing that is going to expand your palate or culinary horizons. The food was good, though certainly nothing to write home about.')
 Review.create(business_id: business1.id, user_id: user19.id, rating: 5,
-              body: 'Fantastic service and amazing atmosphere! Try the dougnuts are a must try!')
+              body: "Wayfare Tavern reminds me of an old school speakeasy bar. I mean, let's talk about the bar. You got baristas with slick back hair, dressed neatly, and a bar filled with dark liquor. Not to mention the bowl of crisp potato chips by the bar (they tasted very good by the way), it all looked aesthetically pleasing.")
 
 # San Tung
 Review.create(business_id: business2.id, user_id: user4.id, rating: 5,
